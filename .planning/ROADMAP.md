@@ -96,12 +96,12 @@ Plans:
   3. Overseer tracks progress (completed vs remaining milestones, blockers, remaining work estimate) and enforces quality gates that block phase progression on failure
   4. Signe researches model best practices before designing new agent prompts, dry-run tests agents with sample tasks, and validates output quality before banking patterns
   5. Validated agent patterns are persisted in MEMORY.md topic files with model, task type, prompt pattern, and success/failure notes -- accessible across sessions
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 05-01: TBD
-- [ ] 05-02: TBD
-- [ ] 05-03: TBD
+- [ ] 05-01-PLAN.md -- Oversight agent and skill: signe-overseer.md with 5-lens review methodology, signe-oversee SKILL.md with scope routing
+- [ ] 05-02-PLAN.md -- Subagent methodology and memory: methodology guidelines in signe.md, agent-recipes.md topic file
+- [ ] 05-03-PLAN.md -- Integration, deployment, and end-to-end validation: update infrastructure files, deploy to ~/.claude/, human-verify
 
 ### Phase 6: Workflow + GSD Integration
 **Goal**: Signe chains all modes into coherent end-to-end workflows, orchestrates GSD in project subfolders, and operates as a proactive chief of staff
