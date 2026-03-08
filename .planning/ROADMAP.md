@@ -48,12 +48,11 @@ Plans:
   3. Researcher performs iterative refinement -- reads initial results, identifies gaps, runs follow-up queries until topic is covered or turn limit is hit
   4. Domain-specific presets (ecosystem survey, feasibility check, comparison, state-of-the-art review) produce appropriately scoped output
   5. Researcher reads actual documents via WebFetch/arxiv/Context7 rather than relying only on search result snippets
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
-- [ ] 02-03: TBD
+- [ ] 02-01-PLAN.md -- Research agent and skill: signe-researcher.md with full methodology, signe-research SKILL.md with preset routing
+- [ ] 02-02-PLAN.md -- Integration, deployment, and end-to-end validation: update CLAUDE.md/signe.md/delegation, deploy to ~/.claude/, human-verify
 
 ### Phase 3: Planning Mode
 **Goal**: Users can invoke structured planning that decomposes goals into ordered, dependency-aware phases with verifiable acceptance criteria
@@ -131,7 +130,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 3/3 | Complete   | 2026-03-08 |
-| 2. Research Mode | 0/3 | Not started | - |
+| 2. Research Mode | 0/2 | Not started | - |
 | 3. Planning Mode | 0/2 | Not started | - |
 | 4. Design Modes | 0/4 | Not started | - |
 | 5. Oversight + Memory | 0/3 | Not started | - |
