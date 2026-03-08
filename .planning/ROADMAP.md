@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Global installation skeleton with CLAUDE.md, settings.json, rules, hooks, and naming conventions (completed 2026-03-08)
 - [x] **Phase 2: Research Mode** - Multi-source research agent with confidence scoring, iterative refinement, and structured output (completed 2026-03-08)
-- [ ] **Phase 3: Planning Mode** - Goal decomposition agent with dependency mapping, requirements extraction, and scope management
+- [x] **Phase 3: Planning Mode** - Goal decomposition agent with dependency mapping, requirements extraction, and scope management (completed 2026-03-08)
 - [ ] **Phase 4: Design Modes** - Four design presets (architecture, UI/UX, agent, product) under a single design skill
 - [ ] **Phase 5: Oversight + Memory** - Code review agent with quality gates, progress tracking, and subagent methodology with persistent playbook
 - [ ] **Phase 6: Workflow + GSD Integration** - Full workflow chaining, GSD orchestration, maker-checker loops, and chief-of-staff behaviors
@@ -67,8 +67,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 03-01-PLAN.md -- Planning agent and skill: signe-planner.md with decomposition methodology, signe-plan SKILL.md with argument routing
-- [ ] 03-02-PLAN.md -- Integration, deployment, and end-to-end validation: update CLAUDE.md/signe.md/delegation, deploy to ~/.claude/, human-verify
+- [x] 03-01-PLAN.md -- Planning agent and skill: signe-planner.md with decomposition methodology, signe-plan SKILL.md with argument routing
+- [x] 03-02-PLAN.md -- Integration, deployment, and end-to-end validation: update CLAUDE.md/signe.md/delegation, deploy to ~/.claude/, human-verify
 
 ### Phase 4: Design Modes
 **Goal**: Users can invoke four design presets (system architecture, UI/UX, agent design, product design) through a single design skill, each producing structured deliverables
@@ -131,7 +131,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 |-------|----------------|--------|-----------|
 | 1. Foundation | 3/3 | Complete   | 2026-03-08 |
 | 2. Research Mode | 2/2 | Complete   | 2026-03-08 |
-| 3. Planning Mode | 0/2 | Not started | - |
+| 3. Planning Mode | 2/2 | Complete | 2026-03-08 |
 | 4. Design Modes | 0/4 | Not started | - |
 | 5. Oversight + Memory | 0/3 | Not started | - |
 | 6. Workflow + GSD Integration | 0/3 | Not started | - |
