@@ -2,9 +2,9 @@
 gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: Public Release
-status: complete
+status: completed
 stopped_at: Completed 09-02 README and user guide -- all v1.1 plans done
-last_updated: "2026-03-08T22:19:30.000Z"
+last_updated: "2026-03-08T22:22:10.325Z"
 last_activity: 2026-03-08 -- Completed 09-02 README and user guide
 progress:
   total_phases: 3
