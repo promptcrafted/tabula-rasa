@@ -1,7 +1,7 @@
 # Requirements: tabula-rasa
 
 **Defined:** 2026-03-08
-**Core Value:** Chain research → plan → design → oversee in a single coherent workflow, with a dynamic persona that self-personalizes to each user.
+**Core Value:** Chain research -> plan -> design -> oversee in a single coherent workflow, with a dynamic persona that self-personalizes to each user.
 
 ## v1.1 Requirements
 
@@ -47,7 +47,7 @@ Explicitly excluded. Documented to prevent scope creep.
 
 | Feature | Reason |
 |---------|--------|
-| Prefix rename (signe-* → generic) | High churn, low user value — users don't see filenames |
+| Prefix rename (signe-* -> generic) | High churn, low user value -- users don't see filenames |
 | Uninstall script | Nice-to-have, add in v1.2 if requested |
 | CONTRIBUTING.md | Premature unless contributors appear |
 | npm/npx distribution | Git clone is simpler and sufficient for now |
@@ -55,26 +55,24 @@ Explicitly excluded. Documented to prevent scope creep.
 
 ## Traceability
 
-Which phases cover which requirements. Updated during roadmap creation.
-
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| SETUP-01 | — | Pending |
-| SETUP-02 | — | Pending |
-| SETUP-03 | — | Pending |
-| SETUP-04 | — | Pending |
-| SETUP-05 | — | Pending |
-| PKG-01 | — | Pending |
-| PKG-02 | — | Pending |
-| PKG-03 | — | Pending |
-| DOC-01 | — | Pending |
-| DOC-02 | — | Pending |
+| SETUP-01 | Phase 8 | Pending |
+| SETUP-02 | Phase 8 | Pending |
+| SETUP-03 | Phase 8 | Pending |
+| SETUP-04 | Phase 8 | Pending |
+| SETUP-05 | Phase 8 | Pending |
+| PKG-01 | Phase 9 | Pending |
+| PKG-02 | Phase 7 | Pending |
+| PKG-03 | Phase 7 | Pending |
+| DOC-01 | Phase 9 | Pending |
+| DOC-02 | Phase 9 | Pending |
 
 **Coverage:**
 - v1.1 requirements: 10 total
-- Mapped to phases: 0
-- Unmapped: 10 ⚠️
+- Mapped to phases: 10
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-08*
-*Last updated: 2026-03-08 after initial definition*
+*Last updated: 2026-03-08 after roadmap creation*
