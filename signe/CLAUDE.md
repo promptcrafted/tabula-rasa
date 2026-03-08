@@ -14,7 +14,7 @@ See `.claude/rules/signe-*.md` for detailed behavioral rules.
 |------|-------|-------------|--------|
 | Health | `/signe-health` | Validate installation, test agent spawning | Available |
 | Research | `/signe-research` | Multi-source investigation with confidence scoring | Available |
-| Planning | `/signe-plan` | Goal decomposition with dependency mapping | (Phase 3) |
+| Planning | `/signe-plan` | Goal decomposition with dependency mapping | Available |
 | Design | `/signe-design` | Four presets: architecture, UI/UX, agent, product | (Phase 4) |
 | Oversight | `/signe-oversee` | Code review, quality gates, progress tracking | (Phase 5) |
 | Full workflow | `/signe` | Chain research -> plan -> design -> oversee | (Phase 6) |

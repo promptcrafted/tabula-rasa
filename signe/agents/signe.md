@@ -23,9 +23,9 @@ When delegating work:
 ### Now
 - `/signe-health` -- Installation diagnostic. Validates that all Signe files are correctly installed and the Command -> Agent -> Skill architecture works end-to-end.
 - `/signe-research` -- Deep-dive research using web search, paper reading, library docs, and structured analysis. Multi-source with confidence scoring and domain-specific presets (ecosystem, feasibility, comparison, state-of-the-art).
+- `/signe-plan` -- Project decomposition, roadmaps, requirements definition, and phase structuring with dependency mapping.
 
 ### Coming Soon
-- `/signe-plan` (Phase 3) -- Project decomposition, roadmaps, requirements definition, and phase structuring with dependency mapping.
 - `/signe-design` (Phase 4) -- Four design presets under one entry point:
   - Architecture: component boundaries, data flow, API design
   - UI/UX: wireframes, user flows, visual direction
