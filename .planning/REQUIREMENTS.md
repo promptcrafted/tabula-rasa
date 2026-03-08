@@ -9,16 +9,16 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Core Infrastructure
 
-- [ ] **INFRA-01**: Signe installs globally at `~/.claude/` and is available in any project folder without per-project config
-- [ ] **INFRA-02**: Signe follows Command -> Agent -> Skill architecture with skills as entry points, agents as specialists, and skills preloaded per agent
-- [ ] **INFRA-03**: All agent/skill/command names use `signe-` prefix to prevent collision with project-level definitions
-- [ ] **INFRA-04**: CLAUDE.md stays under 100 lines with critical instructions in the first 10 lines, splitting overflow into `.claude/rules/` files
-- [ ] **INFRA-05**: `settings.json` auto-approves `Agent(signe-*)` and `Skill(signe-*)` with explicit tool allowlists per agent
-- [ ] **INFRA-06**: Hook scripts use Node.js for cross-platform compatibility (Windows/macOS/Linux)
-- [ ] **INFRA-07**: Signe uses native Claude Code memory (`memory: user`) with MEMORY.md under 200 lines and topic files for overflow
+- [x] **INFRA-01**: Signe installs globally at `~/.claude/` and is available in any project folder without per-project config
+- [x] **INFRA-02**: Signe follows Command -> Agent -> Skill architecture with skills as entry points, agents as specialists, and skills preloaded per agent
+- [x] **INFRA-03**: All agent/skill/command names use `signe-` prefix to prevent collision with project-level definitions
+- [x] **INFRA-04**: CLAUDE.md stays under 100 lines with critical instructions in the first 10 lines, splitting overflow into `.claude/rules/` files
+- [x] **INFRA-05**: `settings.json` auto-approves `Agent(signe-*)` and `Skill(signe-*)` with explicit tool allowlists per agent
+- [x] **INFRA-06**: Hook scripts use Node.js for cross-platform compatibility (Windows/macOS/Linux)
+- [x] **INFRA-07**: Signe uses native Claude Code memory (`memory: user`) with MEMORY.md under 200 lines and topic files for overflow
 - [ ] **INFRA-08**: Full workflow chaining -- output of each mode (research -> plan -> design -> oversee) feeds input of the next
 - [ ] **INFRA-09**: GSD workflows run in project subfolders (e.g., `project/.planning/`) to prevent cross-contamination between projects
-- [ ] **INFRA-10**: Signe orchestrator (`signe.md`) is a flat orchestrator -- all subagent spawning happens from the main thread only
+- [x] **INFRA-10**: Signe orchestrator (`signe.md`) is a flat orchestrator -- all subagent spawning happens from the main thread only
 
 ### Research Mode
 
@@ -135,16 +135,16 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| INFRA-01 | Phase 1: Foundation | Pending |
-| INFRA-02 | Phase 1: Foundation | Pending |
-| INFRA-03 | Phase 1: Foundation | Pending |
-| INFRA-04 | Phase 1: Foundation | Pending |
-| INFRA-05 | Phase 1: Foundation | Pending |
-| INFRA-06 | Phase 1: Foundation | Pending |
-| INFRA-07 | Phase 1: Foundation | Pending |
+| INFRA-01 | Phase 1: Foundation | Complete |
+| INFRA-02 | Phase 1: Foundation | Complete |
+| INFRA-03 | Phase 1: Foundation | Complete |
+| INFRA-04 | Phase 1: Foundation | Complete |
+| INFRA-05 | Phase 1: Foundation | Complete |
+| INFRA-06 | Phase 1: Foundation | Complete |
+| INFRA-07 | Phase 1: Foundation | Complete |
 | INFRA-08 | Phase 6: Workflow + GSD Integration | Pending |
 | INFRA-09 | Phase 6: Workflow + GSD Integration | Pending |
-| INFRA-10 | Phase 1: Foundation | Pending |
+| INFRA-10 | Phase 1: Foundation | Complete |
 | RSRCH-01 | Phase 2: Research Mode | Pending |
 | RSRCH-02 | Phase 2: Research Mode | Pending |
 | RSRCH-03 | Phase 2: Research Mode | Pending |
