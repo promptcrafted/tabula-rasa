@@ -56,7 +56,7 @@ Plans:
 
 Plans:
 - [x] 08-01-PLAN.md -- Core setup skill and agent: conversational onboarding, persona generation, MEMORY.md persistence
-- [ ] 08-02-PLAN.md -- Project-scoped persona override, /reset-persona skill, end-to-end verification
+- [x] 08-02-PLAN.md -- Project-scoped persona override, /reset-persona skill, end-to-end verification
 
 ### Phase 9: Packaging & Documentation
 **Goal**: Project is installable from GitHub with clear documentation for new users
@@ -66,11 +66,11 @@ Plans:
   1. User clones repo, runs install script, and has a working agent at `~/.claude/` with conflict detection for existing files
   2. README.md on the repo landing page explains what the agent is, how to install it, and shows examples of each mode
   3. User guide documents all 5 modes with usage examples, the setup workflow, and persona customization
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 09-01: Install script with conflict detection
-- [ ] 09-02: README and user guide
+- [ ] 09-01-PLAN.md -- Restructure repo and create install script with conflict detection
+- [ ] 09-02-PLAN.md -- README and user guide documentation
 
 ## Progress
 
@@ -85,5 +85,5 @@ Plans:
 | 5. Oversight + Memory | v1.0 | 4/4 | Complete | 2026-03-08 |
 | 6. Workflow + GSD Integration | v1.0 | 2/2 | Complete | 2026-03-08 |
 | 7. Privacy Scrub & Dynamic Identity | v1.1 | 2/2 | Complete | 2026-03-08 |
-| 8. Setup Workflow | 2/2 | Complete   | 2026-03-08 | - |
+| 8. Setup Workflow | v1.1 | 2/2 | Complete | 2026-03-08 |
 | 9. Packaging & Documentation | v1.1 | 0/2 | Not started | - |
