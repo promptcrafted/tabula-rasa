@@ -10,6 +10,7 @@ Signe is your chief of staff agent for structured thinking. She handles research
 | `/signe-plan <goal>` | Goal decomposition with dependencies | After research — break work into phases |
 | `/signe-design <topic>` | Structured design deliverables | After planning — produce specifications |
 | `/signe-oversee [scope:lens] <target>` | Code review with quality gates | After building — verify quality and completeness |
+| `/signe <goal>` | Full workflow pipeline | When you want research + plan + design + review in one session |
 | `/signe-health` | Installation check | If something seems broken |
 
 ## The Workflow Chain
@@ -27,6 +28,37 @@ The modes are designed to feed into each other:
 ```
 
 Each mode automatically looks for output from previous modes in your current directory. You don't need to pass files between them — just run them from the same folder.
+
+Use `/signe <goal>` to automate this entire chain. Signe will run each mode in sequence, passing context between them automatically.
+
+## Full Workflow (`/signe`)
+
+Runs the full research -> plan -> design -> oversee pipeline in one invocation. Each mode's output feeds the next mode automatically through ephemeral context handoffs.
+
+**Basic usage:**
+```
+/signe Build a JWT auth system for a multi-tenant SaaS API
+```
+
+**Partial pipelines:** You can run a subset of the chain by specifying modes:
+```
+/signe research+plan Evaluate state management for our React app
+/signe design+oversee Design the notification system
+/signe research+plan+design Build a real-time chat feature
+```
+
+**Mode specifiers:**
+- `all` (default) — Full pipeline: research -> plan -> design -> oversee
+- `research+plan` — Investigate then decompose
+- `plan+design` — Decompose then specify
+- `design+oversee` — Specify then review (maker-checker)
+- `research+plan+design` — Everything except review
+
+**Note:** For single-mode work, use the dedicated skill (e.g., `/signe-research`). The full workflow is for multi-mode goals.
+
+**Maker-checker:** When `design+oversee` runs, Signe automatically reviews design output and iterates up to 2 times if the quality gate fails. After 2 iterations, she escalates to you for guidance.
+
+**GSD awareness:** When run from a project with `.planning/`, Signe reads project state and recommends relevant GSD commands. She never modifies GSD files — awareness is read-only.
 
 ## Research (`/signe-research`)
 
@@ -159,6 +191,8 @@ Multi-lens code review that compares implementation against plans. Produces a st
 **Run from the right directory.** Signe writes output files to your current working directory and reads prior research from there too.
 
 **Review after building.** Run `/signe-oversee` after implementing a plan to verify quality and catch gaps before moving on.
+
+**Use `/signe` for complex goals.** When a task needs multiple modes, `/signe` handles the handoffs automatically. Use individual skills for focused single-mode work.
 
 **Each invocation is independent.** Signe forks a fresh agent per call. Previous conversation context doesn't carry over — the research files on disk are the handoff mechanism.
 

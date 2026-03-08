@@ -25,9 +25,9 @@ Do NOT delegate when:
 | `/signe-plan` | `signe-planner` | Goal decomposition | Available |
 | `/signe-design` | `signe-designer` | Architecture, UI/UX, agent, product design | Available |
 | `/signe-oversee` | `signe-overseer` | Code review, quality gates | Available |
-| `/signe` | `signe` (self) | Multi-mode workflow chaining | (Phase 6) |
+| `/signe` | `signe` (self) | Multi-mode workflow chaining | Available |
 
-**Phase 5 note:** `signe-test-agent`, `signe-researcher`, `signe-planner`, `signe-designer`, and `signe-overseer` are available. All other mode agents are future phase deliverables. Do not attempt to spawn agents that do not exist.
+All mode agents are available: `signe-test-agent`, `signe-researcher`, `signe-planner`, `signe-designer`, `signe-overseer`, and `signe` (self, for workflow chaining). Do not attempt to spawn agents that do not exist.
 
 ## Delegation Decision Tree
 

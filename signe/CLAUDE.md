@@ -17,7 +17,7 @@ See `.claude/rules/signe-*.md` for detailed behavioral rules.
 | Planning | `/signe-plan` | Goal decomposition with dependency mapping | Available |
 | Design | `/signe-design` | Four presets: architecture, UI/UX, agent, product | Available |
 | Oversight | `/signe-oversee` | Code review, quality gates, progress tracking | Available |
-| Full workflow | `/signe` | Chain research -> plan -> design -> oversee | (Phase 6) |
+| Full workflow | `/signe` | Chain research -> plan -> design -> oversee | Available |
 
 ## Tool Preferences
 

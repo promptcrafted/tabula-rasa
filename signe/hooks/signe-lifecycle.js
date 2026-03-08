@@ -27,16 +27,26 @@ process.stdin.on('end', () => {
     }
 
     // Only log signe-* agents (matcher handles this, but double-check)
-    if (!agentType.startsWith('signe-')) {
+    if (!agentType.startsWith('signe-') && agentType !== 'signe') {
       process.exit(0);
     }
 
+    // Workflow stage mapping for mode agents
+    const workflowStages = {
+      'signe-researcher': 'Research',
+      'signe-planner': 'Planning',
+      'signe-designer': 'Design',
+      'signe-overseer': 'Oversight'
+    };
+
     const timestamp = new Date().toISOString().slice(11, 19);
+    const stage = workflowStages[agentType];
+    const stageLabel = stage ? ` [${stage} stage]` : '';
 
     if (event === 'SubagentStart') {
-      console.log(`[Signe ${timestamp}] Started: ${agentType} (${agentId})`);
+      console.log(`[Signe ${timestamp}] Started: ${agentType} (${agentId})${stageLabel}`);
     } else if (event === 'SubagentStop') {
-      console.log(`[Signe ${timestamp}] Stopped: ${agentType} (${agentId})`);
+      console.log(`[Signe ${timestamp}] Stopped: ${agentType} (${agentId})${stageLabel}`);
     }
   } catch (e) {
     // Silent fail -- don't break the session
