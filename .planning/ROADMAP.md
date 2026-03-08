@@ -31,12 +31,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. `settings.json` auto-approves `Agent(signe-*)` and `Skill(signe-*)` patterns without manual permission prompts
   4. Hook scripts (Node.js) execute on SubagentStart/Stop lifecycle events and produce observable log output on Windows
   5. CLAUDE.md is under 100 lines with critical instructions in the first 10 lines, and overflow lives in `.claude/rules/` files
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
-- [ ] 01-03: TBD
+- [ ] 01-01-PLAN.md -- Core identity and rules: CLAUDE.md, rules files, lifecycle hook, memory directory
+- [ ] 01-02-PLAN.md -- Agents and settings: signe.md orchestrator, signe-test-agent, merged settings.json
+- [ ] 01-03-PLAN.md -- Health check skill and end-to-end deployment validation
 
 ### Phase 2: Research Mode
 **Goal**: Users can invoke deep-dive research that orchestrates multiple sources, scores confidence, and produces structured findings
@@ -130,7 +130,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/3 | Not started | - |
+| 1. Foundation | 0/3 | Planning complete | - |
 | 2. Research Mode | 0/3 | Not started | - |
 | 3. Planning Mode | 0/2 | Not started | - |
 | 4. Design Modes | 0/4 | Not started | - |
