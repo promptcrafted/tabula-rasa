@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: Public Release
 status: in-progress
-stopped_at: Completed 08-01-PLAN.md
-last_updated: "2026-03-08T21:41:00Z"
-last_activity: 2026-03-08 -- Completed 08-01 setup skill and agent
+stopped_at: Completed 08-02-PLAN.md
+last_updated: "2026-03-08T21:43:00Z"
+last_activity: 2026-03-08 -- Completed 08-02 project-scoped persona and reset
 progress:
   total_phases: 3
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 4
-  completed_plans: 3
-  percent: 75
+  completed_plans: 4
+  percent: 100
 ---
 
 # Project State
@@ -25,18 +25,18 @@ See: .planning/PROJECT.md (updated 2026-03-08)
 
 ## Current Position
 
-Phase: 8 of 9 (Setup Workflow)
-Plan: 1 of 2 in current phase
-Status: In Progress
-Last activity: 2026-03-08 -- Completed 08-01 setup skill and agent
+Phase: 8 of 9 (Setup Workflow -- COMPLETE)
+Plan: 2 of 2 in current phase
+Status: Phase Complete
+Last activity: 2026-03-08 -- Completed 08-02 project-scoped persona and reset
 
-Progress: [████████░░] 75% (3/4 v1.1 plans)
+Progress: [██████████] 100% (4/4 v1.1 plans)
 
 ## Performance Metrics
 
 **Velocity:**
 - Total plans completed: 15 (v1.0)
-- v1.1 plans completed: 3
+- v1.1 plans completed: 4
 - Average duration: 2.3min
 - Total execution time: 7min
 
@@ -54,6 +54,8 @@ v1.1 decisions:
 - /setup hint in main orchestrator only, not subagents
 - Persona section at top of MEMORY.md for fast auto-loading within 200-line window
 - Two-strike name veto: first reject new name, second reject user chooses
+- Reset supports three modes: global-only (default), project-only, and all
+- Reset removes only Persona sections, preserves all other MEMORY.md content
 
 ### Pending Todos
 
@@ -65,6 +67,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-08T21:41:00Z
-Stopped at: Completed 08-01-PLAN.md
-Next: 08-02-PLAN.md (project-scoped persona, /reset-persona)
+Last session: 2026-03-08T21:43:00Z
+Stopped at: Completed 08-02-PLAN.md
+Next: Phase 9 (Packaging & Documentation)

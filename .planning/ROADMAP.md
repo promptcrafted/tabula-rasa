@@ -22,7 +22,7 @@
 ### v1.1 Public Release
 
 - [x] **Phase 7: Privacy Scrub & Dynamic Identity** - Remove private references and replace hardcoded Signe identity with dynamic persona system
-- [ ] **Phase 8: Setup Workflow** - Conversational onboarding where agent learns user context and self-personalizes
+- [x] **Phase 8: Setup Workflow** - Conversational onboarding where agent learns user context and self-personalizes (completed 2026-03-08)
 - [ ] **Phase 9: Packaging & Documentation** - Install script, README, and user guide for public release
 
 ## Phase Details
@@ -52,7 +52,7 @@ Plans:
   3. On next session start, agent loads its persona automatically and uses the chosen name/personality throughout all interactions
   4. User runs `/setup` inside a project folder and gets a project-scoped persona that overrides the global one for that project
   5. User runs `/reset-persona` and persona is wiped, returning agent to pre-setup state ready for fresh onboarding
-**Plans:** 1/2 plans executed
+**Plans:** 2/2 plans complete
 
 Plans:
 - [x] 08-01-PLAN.md -- Core setup skill and agent: conversational onboarding, persona generation, MEMORY.md persistence
@@ -85,5 +85,5 @@ Plans:
 | 5. Oversight + Memory | v1.0 | 4/4 | Complete | 2026-03-08 |
 | 6. Workflow + GSD Integration | v1.0 | 2/2 | Complete | 2026-03-08 |
 | 7. Privacy Scrub & Dynamic Identity | v1.1 | 2/2 | Complete | 2026-03-08 |
-| 8. Setup Workflow | v1.1 | 1/2 | In progress | - |
+| 8. Setup Workflow | 2/2 | Complete   | 2026-03-08 | - |
 | 9. Packaging & Documentation | v1.1 | 0/2 | Not started | - |
