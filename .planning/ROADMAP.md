@@ -16,7 +16,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 2: Research Mode** - Multi-source research agent with confidence scoring, iterative refinement, and structured output (completed 2026-03-08)
 - [x] **Phase 3: Planning Mode** - Goal decomposition agent with dependency mapping, requirements extraction, and scope management (completed 2026-03-08)
 - [x] **Phase 4: Design Modes** - Four design presets (architecture, UI/UX, agent, product) under a single design skill (completed 2026-03-08)
-- [ ] **Phase 5: Oversight + Memory** - Code review agent with quality gates, progress tracking, and subagent methodology with persistent playbook
+- [x] **Phase 5: Oversight + Memory** - Code review agent with quality gates, progress tracking, and subagent methodology with persistent playbook
 - [ ] **Phase 6: Workflow + GSD Integration** - Full workflow chaining, GSD orchestration, maker-checker loops, and chief-of-staff behaviors
 
 ## Phase Details
@@ -101,8 +101,8 @@ Plans:
 Plans:
 - [x] 05-01-PLAN.md -- Oversight agent and skill: signe-overseer.md with 5-lens review methodology, signe-oversee SKILL.md with scope routing
 - [x] 05-02-PLAN.md -- Subagent methodology and memory: methodology guidelines in signe.md, agent-recipes.md topic file
-- [ ] 05-03-PLAN.md -- Integration, deployment, and end-to-end validation: update infrastructure files, deploy to ~/.claude/, human-verify
-- [ ] 05-04-PLAN.md -- Review remediation: fix SIGNE-GUIDE.md oversight gap, update stale health check, add hook debug mode
+- [x] 05-03-PLAN.md -- Integration, deployment, and end-to-end validation: update infrastructure files, deploy to ~/.claude/, human-verify
+- [x] 05-04-PLAN.md -- Review remediation: fix SIGNE-GUIDE.md oversight gap, update stale health check, add hook debug mode
 
 ### Phase 6: Workflow + GSD Integration
 **Goal**: Signe chains all modes into coherent end-to-end workflows, orchestrates GSD in project subfolders, and operates as a proactive chief of staff
@@ -132,5 +132,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | 2. Research Mode | 2/2 | Complete   | 2026-03-08 |
 | 3. Planning Mode | 2/2 | Complete | 2026-03-08 |
 | 4. Design Modes | 2/2 | Complete | 2026-03-08 |
-| 5. Oversight + Memory | 2/4 | In progress | - |
+| 5. Oversight + Memory | 4/4 | Complete | 2026-03-08 |
 | 6. Workflow + GSD Integration | 0/3 | Not started | - |
