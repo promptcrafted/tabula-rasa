@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: Public Release
-status: completed
-stopped_at: Phase 9 context gathered
-last_updated: "2026-03-08T22:01:04.789Z"
-last_activity: 2026-03-08 -- Completed 08-02 project-scoped persona and reset
+status: in_progress
+stopped_at: Completed 09-01 repo restructure and install script
+last_updated: "2026-03-08T22:14:27.730Z"
+last_activity: 2026-03-08 -- Completed 09-01 repo restructure and install script
 progress:
   total_phases: 3
   completed_phases: 2
-  total_plans: 4
-  completed_plans: 4
+  total_plans: 6
+  completed_plans: 5
   percent: 100
 ---
 
@@ -21,24 +21,24 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-08)
 
 **Core value:** Chain research -> plan -> design -> oversee in a single coherent workflow, with dynamic persona that self-personalizes to each user.
-**Current focus:** Phase 8 -- Setup Workflow
+**Current focus:** Phase 9 -- Packaging & Documentation
 
 ## Current Position
 
-Phase: 8 of 9 (Setup Workflow -- COMPLETE)
-Plan: 2 of 2 in current phase
-Status: Phase Complete
-Last activity: 2026-03-08 -- Completed 08-02 project-scoped persona and reset
+Phase: 9 of 9 (Packaging & Documentation)
+Plan: 1 of 2 in current phase
+Status: In Progress
+Last activity: 2026-03-08 -- Completed 09-01 repo restructure and install script
 
-Progress: [██████████] 100% (4/4 v1.1 plans)
+Progress: [████████░░] 83% (5/6 v1.1 plans)
 
 ## Performance Metrics
 
 **Velocity:**
 - Total plans completed: 15 (v1.0)
-- v1.1 plans completed: 4
-- Average duration: 2.3min
-- Total execution time: 7min
+- v1.1 plans completed: 5
+- Average duration: 2.2min
+- Total execution time: 9min
 
 ## Accumulated Context
 
@@ -56,6 +56,8 @@ v1.1 decisions:
 - Two-strike name veto: first reject new name, second reject user chooses
 - Reset supports three modes: global-only (default), project-only, and all
 - Reset removes only Persona sections, preserves all other MEMORY.md content
+- Source of truth for agent files is ~/.claude/ (Phase 7-8 updated in place)
+- install.sh never auto-merges settings.json -- user must manually merge
 
 ### Pending Todos
 
@@ -67,6 +69,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-08T22:01:04.787Z
-Stopped at: Phase 9 context gathered
-Next: Phase 9 (Packaging & Documentation)
+Last session: 2026-03-08T22:13:44Z
+Stopped at: Completed 09-01 repo restructure and install script
+Next: 09-02 (README and user guide)

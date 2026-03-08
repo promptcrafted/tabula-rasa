@@ -17,7 +17,7 @@ Requirements for public release. Each maps to roadmap phases.
 
 ### Packaging
 
-- [ ] **PKG-01**: Install script (bash) clones repo and copies files to `~/.claude/` with conflict detection
+- [x] **PKG-01**: Install script (bash) clones repo and copies files to `~/.claude/` with conflict detection
 - [x] **PKG-02**: All personal paths, MCP configs, Obsidian/vexp/GSD-specific references scrubbed from source
 - [x] **PKG-03**: Hardcoded "Signe" identity replaced with dynamic persona references throughout agent prompts
 
@@ -62,7 +62,7 @@ Explicitly excluded. Documented to prevent scope creep.
 | SETUP-03 | Phase 8 | Complete |
 | SETUP-04 | Phase 8 | Complete |
 | SETUP-05 | Phase 8 | Complete |
-| PKG-01 | Phase 9 | Pending |
+| PKG-01 | Phase 9 | Complete |
 | PKG-02 | Phase 7 | Complete |
 | PKG-03 | Phase 7 | Complete |
 | DOC-01 | Phase 9 | Pending |
