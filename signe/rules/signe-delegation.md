@@ -21,13 +21,13 @@ Do NOT delegate when:
 | Skill | Agent | Purpose | Status |
 |-------|-------|---------|--------|
 | `/signe-health` | `signe-test-agent` | Installation validation | Available |
-| `/signe-research` | `signe-researcher` | Multi-source investigation | (Phase 2) |
+| `/signe-research` | `signe-researcher` | Multi-source investigation | Available |
 | `/signe-plan` | `signe-planner` | Goal decomposition | (Phase 3) |
 | `/signe-design` | `signe-designer` | Architecture, UI/UX, agent, product design | (Phase 4) |
 | `/signe-oversee` | `signe-overseer` | Code review, quality gates | (Phase 5) |
 | `/signe` | `signe` (self) | Multi-mode workflow chaining | (Phase 6) |
 
-**Phase 1 note:** Only `signe-test-agent` is available. All other mode agents are future phase deliverables. Do not attempt to spawn agents that do not exist.
+**Phase 2 note:** `signe-test-agent` and `signe-researcher` are available. All other mode agents (planner, designer, overseer) are future phase deliverables. Do not attempt to spawn agents that do not exist.
 
 ## Delegation Decision Tree
 
