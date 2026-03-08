@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: completed
-stopped_at: Phase 5 context gathered
-last_updated: "2026-03-08T17:30:54.230Z"
-last_activity: 2026-03-08 -- Plan 04-02 executed (design mode deployment + e2e validation)
+status: in-progress
+stopped_at: Completed 05-02
+last_updated: "2026-03-08T17:51:13Z"
+last_activity: 2026-03-08 -- Plan 05-02 executed (subagent methodology + agent-recipes playbook)
 progress:
   total_phases: 6
   completed_phases: 4
-  total_plans: 9
-  completed_plans: 9
-  percent: 100
+  total_plans: 12
+  completed_plans: 10
+  percent: 83
 ---
 
 # Project State
@@ -21,23 +21,23 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-07)
 
 **Core value:** Signe must chain research -> plan -> design -> oversee in a single coherent workflow, delegating to specialized subagents she designs, tests, and validates herself.
-**Current focus:** Phase 4: Design Modes (COMPLETE) -- Ready for Phase 5
+**Current focus:** Phase 5: Oversight & Memory -- subagent methodology complete, oversight agent pending
 
 ## Current Position
 
-Phase: 4 of 6 (Design Modes -- COMPLETE)
-Plan: 2 of 2 in current phase (all plans complete)
-Status: Phase 4 complete -- design mode deployed and all four presets validated end-to-end
-Last activity: 2026-03-08 -- Plan 04-02 executed (design mode deployment + e2e validation)
+Phase: 5 of 6 (Oversight & Memory)
+Plan: 2 of 3 in current phase (05-02 complete)
+Status: Plan 05-02 complete -- subagent methodology added to signe.md, agent-recipes playbook initialized
+Last activity: 2026-03-08 -- Plan 05-02 executed (subagent methodology + agent-recipes playbook)
 
-Progress: [██████████] 100%
+Progress: [████████░░] 83%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 9
-- Average duration: ~3.4min
-- Total execution time: ~31 min
+- Total plans completed: 10
+- Average duration: ~3.2min
+- Total execution time: ~32 min
 
 **By Phase:**
 
@@ -47,10 +47,11 @@ Progress: [██████████] 100%
 | 2. Research Mode | 2/2 | ~8min | ~4min |
 | 3. Planning Mode | 2/2 | ~5min | ~2.5min |
 | 4. Design Modes | 2/2 | ~7min | ~3.5min |
+| 5. Oversight & Memory | 1/3 | ~1min | ~1min |
 
 **Recent Trend:**
-- Last 3 plans: 03-02 (3min), 04-01 (3min), 04-02 (4min)
-- Trend: Consistent fast execution, integration plans averaging 3-4min
+- Last 3 plans: 04-01 (3min), 04-02 (4min), 05-02 (1min)
+- Trend: Lightweight documentation-only plans execute in under 2min
 
 *Updated after each plan completion*
 
@@ -91,6 +92,9 @@ Recent decisions affecting current work:
 - [04-01]: Methodology-per-preset with "follow ONLY these steps" delimiter to prevent cross-contamination
 - [04-02]: Direct cp deployment pattern reused from Phases 2 and 3 -- consistent across all mode deployments
 - [04-02]: Phase note updated from Phase 3 to Phase 4 in delegation rules to reflect signe-designer availability
+- [05-02]: Methodology section placed after Memory, before Tool Access in signe.md
+- [05-02]: agent-recipes.md uses 90-day pruning guidance for stale entries
+- [05-02]: Maximum 2 iteration rounds before escalating to user for guidance
 
 ### Pending Todos
 
@@ -104,7 +108,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-08T17:30:54.228Z
-Stopped at: Phase 5 context gathered
-Resume file: .planning/phases/05-oversight-memory/05-CONTEXT.md
-Next: Phase 5 Plan 01 -- oversight agent and memory system
+Last session: 2026-03-08T17:51:13Z
+Stopped at: Completed 05-02
+Resume file: .planning/phases/05-oversight-memory/05-02-SUMMARY.md
+Next: Phase 5 remaining plans

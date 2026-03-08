@@ -83,11 +83,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Subagent Methodology
 
-- [ ] **METH-01**: Signe researches best practices for each model/agent type before designing prompts
-- [ ] **METH-02**: Signe drafts agent prompts following structured methodology (not ad-hoc)
-- [ ] **METH-03**: Signe dry-run tests new agents with sample tasks and evaluates output quality
-- [ ] **METH-04**: Signe validates tested agents against quality criteria before banking as working patterns
-- [ ] **METH-05**: Signe banks validated agent patterns in MEMORY.md topic files (model, task type, prompt pattern, success/failure notes)
+- [x] **METH-01**: Signe researches best practices for each model/agent type before designing prompts
+- [x] **METH-02**: Signe drafts agent prompts following structured methodology (not ad-hoc)
+- [x] **METH-03**: Signe dry-run tests new agents with sample tasks and evaluates output quality
+- [x] **METH-04**: Signe validates tested agents against quality criteria before banking as working patterns
+- [x] **METH-05**: Signe banks validated agent patterns in MEMORY.md topic files (model, task type, prompt pattern, success/failure notes)
 
 ### Chief of Staff Personality
 
@@ -185,11 +185,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | OVRS-04 | Phase 5: Oversight + Memory | Pending |
 | OVRS-05 | Phase 5: Oversight + Memory | Pending |
 | OVRS-06 | Phase 5: Oversight + Memory | Pending |
-| METH-01 | Phase 5: Oversight + Memory | Pending |
-| METH-02 | Phase 5: Oversight + Memory | Pending |
-| METH-03 | Phase 5: Oversight + Memory | Pending |
-| METH-04 | Phase 5: Oversight + Memory | Pending |
-| METH-05 | Phase 5: Oversight + Memory | Pending |
+| METH-01 | Phase 5: Oversight + Memory | Complete |
+| METH-02 | Phase 5: Oversight + Memory | Complete |
+| METH-03 | Phase 5: Oversight + Memory | Complete |
+| METH-04 | Phase 5: Oversight + Memory | Complete |
+| METH-05 | Phase 5: Oversight + Memory | Complete |
 | CHST-01 | Phase 6: Workflow + GSD Integration | Pending |
 | CHST-02 | Phase 6: Workflow + GSD Integration | Pending |
 | CHST-03 | Phase 6: Workflow + GSD Integration | Pending |
