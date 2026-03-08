@@ -1,8 +1,20 @@
-# Signe
+# tabula-rasa (internal: Signe)
 
 ## What This Is
 
-Signe is a globally-installed Claude Code agent package — a chief of staff AI assistant that lives at `~/.claude/` and is available in every project without per-project setup. She chains research → plan → design → oversee in coherent workflows, delegating to 5 specialist subagents she designs, tests, and validates through a persistent methodology. Built on Command → Agent → Skill architecture with flat orchestration (no nested subagent spawning).
+tabula-rasa is an open-source Claude Code agent package — a chief of staff AI that lives at `~/.claude/` and personalizes itself to each user. On first run, `/setup` guides a conversation where the agent learns about the user and then picks its own name, gender, and personality. From that point on, it's their personal chief of staff with 5 modes: research, plan, design, oversee, and full pipeline chaining. Built on Command → Agent → Skill architecture with flat orchestration.
+
+## Current Milestone: v1.1 Public Release
+
+**Goal:** Package Signe as `tabula-rasa` — a public GitHub repo with install script, setup workflow for agent self-personalization, scrubbed of all private references, with polished README.
+
+**Target features:**
+- Setup workflow (`/setup`) — conversational onboarding where agent learns user context and self-names
+- Dynamic persona system replacing hardcoded "Signe" identity
+- Git repo with install script (mirrors GSD pattern)
+- All 5 modes + pipeline chaining shipped (scrubbed of private refs)
+- Polished README with features, install instructions, and examples
+- Per-project or global persona (user's choice)
 
 ## Core Value
 
@@ -28,21 +40,25 @@ Signe must be able to chain research → plan → design → oversee in a single
 
 ### Active
 
-- [ ] Cross-project pattern recognition (ADV-01)
-- [ ] Model-aware prompt optimization (ADV-02)
-- [ ] Agent teams integration (ADV-03, pending Windows support)
-- [ ] Automatic memory curation via PostToolUse hooks (MEM-01)
-- [ ] Progressive knowledge distillation (MEM-02)
+- [ ] Setup workflow — conversational onboarding with agent self-naming
+- [ ] Dynamic persona system — replace hardcoded Signe identity with user-specific persona
+- [ ] Install script — clone-and-run installation mirroring GSD pattern
+- [ ] Privacy scrub — remove all personal paths, MCP configs, private references
+- [ ] Public README — features, install, usage examples
+- [ ] Per-project persona override — folder-level identity customization
 
 ### Out of Scope
 
-- Per-project installation — Signe is global by design, per-project copies create version drift
+- Per-project installation — global by design, per-project copies create version drift
 - Custom CLI tool — pure `.claude/` structure following reference repo patterns
-- Replacing vexp — Signe orchestrates, she doesn't replace existing tools
-- Mobile/web interface — CLI agent only, GUIs require hosting and maintenance
-- Training/fine-tuning models — bank prompt patterns as knowledge, not model weights
+- Mobile/web interface — CLI agent only
 - Nested agent spawning — Claude Code does not support subagents spawning subagents
 - Over-parallelization (>5 subagents) — diminishing returns from coordination overhead
+- Cross-project pattern recognition (ADV-01) — deferred to v1.2+
+- Model-aware prompt optimization (ADV-02) — deferred to v1.2+
+- Agent teams integration (ADV-03) — pending Windows support
+- Automatic memory curation (MEM-01) — deferred to v1.2+
+- Progressive knowledge distillation (MEM-02) — deferred to v1.2+
 
 ## Context
 
@@ -82,4 +98,4 @@ MCP tools: Brave, Tavily, Exa, Context7, arxiv for research; all tools inherited
 | maxTurns calibrated per role | Researcher 50, designer/overseer 40, planner 30 | ✓ Good — no turn limit issues observed |
 
 ---
-*Last updated: 2026-03-08 after v1.0 milestone*
+*Last updated: 2026-03-08 after v1.1 milestone start*
