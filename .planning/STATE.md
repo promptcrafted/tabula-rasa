@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: in-progress
-stopped_at: Completed 05-01
-last_updated: "2026-03-08T17:53:00Z"
+status: completed
+stopped_at: Completed 05-04-PLAN.md
+last_updated: "2026-03-08T18:19:25.577Z"
 last_activity: 2026-03-08 -- Plan 05-01 executed (oversight agent + skill entry point)
 progress:
   total_phases: 6
   completed_phases: 4
-  total_plans: 12
-  completed_plans: 11
+  total_plans: 13
+  completed_plans: 12
   percent: 92
 ---
 
@@ -21,14 +21,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-07)
 
 **Core value:** Signe must chain research -> plan -> design -> oversee in a single coherent workflow, delegating to specialized subagents she designs, tests, and validates herself.
-**Current focus:** Phase 5: Oversight & Memory -- oversight agent and methodology complete, deployment remaining
+**Current focus:** Phase 5: Oversight & Memory -- complete. All plans executed including review remediation.
 
 ## Current Position
 
 Phase: 5 of 6 (Oversight & Memory)
-Plan: 2 of 3 in current phase (05-01 and 05-02 complete)
-Status: Plans 05-01 and 05-02 complete -- oversight agent, skill, methodology, and playbook done; deployment remaining in 05-03
-Last activity: 2026-03-08 -- Plan 05-01 executed (oversight agent + skill entry point)
+Plan: 4 of 4 in current phase (all complete)
+Status: Phase 5 complete -- all oversight review findings remediated (guide, health check, hook diagnostics)
+Last activity: 2026-03-08 -- Plan 05-04 executed (oversight review remediation)
 
 Progress: [█████████░] 92%
 
@@ -47,13 +47,14 @@ Progress: [█████████░] 92%
 | 2. Research Mode | 2/2 | ~8min | ~4min |
 | 3. Planning Mode | 2/2 | ~5min | ~2.5min |
 | 4. Design Modes | 2/2 | ~7min | ~3.5min |
-| 5. Oversight & Memory | 2/3 | ~4min | ~2min |
+| 5. Oversight & Memory | 4/4 | ~6min | ~1.5min |
 
 **Recent Trend:**
 - Last 3 plans: 04-02 (4min), 05-02 (1min), 05-01 (3min)
 - Trend: Agent definition plans average 3min, documentation-only plans under 2min
 
 *Updated after each plan completion*
+| Phase 05 P04 | 2min | 3 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -99,6 +100,9 @@ Recent decisions affecting current work:
 - [05-02]: Methodology section placed after Memory, before Tool Access in signe.md
 - [05-02]: agent-recipes.md uses 90-day pruning guidance for stale entries
 - [05-02]: Maximum 2 iteration rounds before escalating to user for guidance
+- [Phase 05]: SIGNE-GUIDE.md added to repo source for version tracking
+- [Phase 05]: Health check expanded from 8 to 20 files with YAML validation for all agents and skills
+- [Phase 05]: Debug logging gated by SIGNE_DEBUG=1 env var; field mismatch warning always-on
 
 ### Pending Todos
 
@@ -112,7 +116,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-08T17:53:00Z
-Stopped at: Completed 05-01
-Resume file: .planning/phases/05-oversight-memory/05-01-SUMMARY.md
+Last session: 2026-03-08T18:19:25.575Z
+Stopped at: Completed 05-04-PLAN.md
+Resume file: None
 Next: Phase 5 Plan 03 -- integration, deployment, and end-to-end validation
