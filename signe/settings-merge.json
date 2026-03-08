@@ -1,0 +1,58 @@
+{
+  "permissions": {
+    "allow": [
+      "Agent(signe-*)",
+      "Skill(signe-* *)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"C:/Users/minta/.claude/hooks/gsd-check-update.js\""
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"C:/Users/minta/.claude/hooks/gsd-context-monitor.js\""
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "matcher": "signe-.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"C:/Users/minta/.claude/hooks/signe-lifecycle.js\""
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "matcher": "signe-.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"C:/Users/minta/.claude/hooks/signe-lifecycle.js\""
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "node \"C:/Users/minta/.claude/hooks/gsd-statusline.js\""
+  },
+  "autoUpdatesChannel": "latest",
+  "effortLevel": "high"
+}
