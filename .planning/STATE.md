@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: completed
-stopped_at: Phase 6 context gathered
-last_updated: "2026-03-08T18:33:28.859Z"
-last_activity: 2026-03-08 -- Plan 05-04 executed (oversight review remediation)
+status: in-progress
+stopped_at: Completed 06-01-PLAN.md
+last_updated: "2026-03-08T18:53:32.328Z"
+last_activity: 2026-03-08 -- Plan 06-01 executed (workflow chaining core)
 progress:
   total_phases: 6
   completed_phases: 5
-  total_plans: 13
-  completed_plans: 13
-  percent: 92
+  total_plans: 15
+  completed_plans: 14
+  percent: 93
 ---
 
 # Project State
@@ -21,16 +21,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-07)
 
 **Core value:** Signe must chain research -> plan -> design -> oversee in a single coherent workflow, delegating to specialized subagents she designs, tests, and validates herself.
-**Current focus:** Phase 5: Oversight & Memory -- complete. All plans executed including review remediation.
+**Current focus:** Phase 6: Workflow + GSD Integration -- in progress. Plan 06-01 (workflow chaining core) complete.
 
 ## Current Position
 
-Phase: 5 of 6 (Oversight & Memory)
-Plan: 4 of 4 in current phase (all complete)
-Status: Phase 5 complete -- all oversight review findings remediated (guide, health check, hook diagnostics)
-Last activity: 2026-03-08 -- Plan 05-04 executed (oversight review remediation)
+Phase: 6 of 6 (Workflow + GSD Integration)
+Plan: 1 of 2 in current phase
+Status: Plan 06-01 complete -- workflow chaining, proactive behaviors, GSD awareness added to signe.md
+Last activity: 2026-03-08 -- Plan 06-01 executed (workflow chaining core)
 
-Progress: [█████████░] 92%
+Progress: [█████████░] 93%
 
 ## Performance Metrics
 
@@ -55,6 +55,7 @@ Progress: [█████████░] 92%
 
 *Updated after each plan completion*
 | Phase 05 P04 | 2min | 3 tasks | 6 files |
+| Phase 06 P01 | 3min | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -103,6 +104,11 @@ Recent decisions affecting current work:
 - [Phase 05]: SIGNE-GUIDE.md added to repo source for version tracking
 - [Phase 05]: Health check expanded from 8 to 20 files with YAML validation for all agents and skills
 - [Phase 05]: Debug logging gated by SIGNE_DEBUG=1 env var; field mismatch warning always-on
+- [06-01]: Workflow chaining implemented as orchestrator prompt sections, not custom pipeline framework
+- [06-01]: Context handoffs are ephemeral conversation context (10-15 lines per stage), not persisted files
+- [06-01]: Maker-checker loop capped at 2 iterations before user escalation, matching Phase 5 METH pattern
+- [06-01]: GSD awareness is read-only with cwd-based path scoping for cross-contamination prevention
+- [06-01]: /signe skill uses context: fork with disable-model-invocation: true
 
 ### Pending Todos
 
@@ -116,7 +122,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-08T18:33:28.857Z
-Stopped at: Phase 6 context gathered
-Resume file: .planning/phases/06-workflow-gsd-integration/06-CONTEXT.md
-Next: Phase 5 complete -- all 4 plans executed. Phase 6 (Workflow + GSD Integration) ready to begin.
+Last session: 2026-03-08T18:53:34Z
+Stopped at: Completed 06-01-PLAN.md
+Resume file: .planning/phases/06-workflow-gsd-integration/06-01-SUMMARY.md
+Next: Plan 06-02 (deployment) ready to execute -- deploy updated files to ~/.claude/ and update CLAUDE.md, delegation rules, guide.

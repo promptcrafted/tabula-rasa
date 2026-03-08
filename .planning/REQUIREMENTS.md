@@ -16,8 +16,8 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **INFRA-05**: `settings.json` auto-approves `Agent(signe-*)` and `Skill(signe-*)` with explicit tool allowlists per agent
 - [x] **INFRA-06**: Hook scripts use Node.js for cross-platform compatibility (Windows/macOS/Linux)
 - [x] **INFRA-07**: Signe uses native Claude Code memory (`memory: user`) with MEMORY.md under 200 lines and topic files for overflow
-- [ ] **INFRA-08**: Full workflow chaining -- output of each mode (research -> plan -> design -> oversee) feeds input of the next
-- [ ] **INFRA-09**: GSD workflows run in project subfolders (e.g., `project/.planning/`) to prevent cross-contamination between projects
+- [x] **INFRA-08**: Full workflow chaining -- output of each mode (research -> plan -> design -> oversee) feeds input of the next
+- [x] **INFRA-09**: GSD workflows run in project subfolders (e.g., `project/.planning/`) to prevent cross-contamination between projects
 - [x] **INFRA-10**: Signe orchestrator (`signe.md`) is a flat orchestrator -- all subagent spawning happens from the main thread only
 
 ### Research Mode
@@ -91,11 +91,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Chief of Staff Personality
 
-- [ ] **CHST-01**: Signe proactively identifies risks and surfaces blockers without being asked
-- [ ] **CHST-02**: Signe summarizes project status at natural milestones
-- [ ] **CHST-03**: Signe recommends next actions based on current project state
-- [ ] **CHST-04**: Signe uses maker-checker loops -- design agent produces, review agent critiques, iterate until quality gate passes
-- [ ] **CHST-05**: Signe generates mode-aware context handoff documents when transitioning between workflow stages
+- [x] **CHST-01**: Signe proactively identifies risks and surfaces blockers without being asked
+- [x] **CHST-02**: Signe summarizes project status at natural milestones
+- [x] **CHST-03**: Signe recommends next actions based on current project state
+- [x] **CHST-04**: Signe uses maker-checker loops -- design agent produces, review agent critiques, iterate until quality gate passes
+- [x] **CHST-05**: Signe generates mode-aware context handoff documents when transitioning between workflow stages
 
 ## v2 Requirements
 
@@ -142,8 +142,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | INFRA-05 | Phase 1: Foundation | Complete |
 | INFRA-06 | Phase 1: Foundation | Complete |
 | INFRA-07 | Phase 1: Foundation | Complete |
-| INFRA-08 | Phase 6: Workflow + GSD Integration | Pending |
-| INFRA-09 | Phase 6: Workflow + GSD Integration | Pending |
+| INFRA-08 | Phase 6: Workflow + GSD Integration | Complete |
+| INFRA-09 | Phase 6: Workflow + GSD Integration | Complete |
 | INFRA-10 | Phase 1: Foundation | Complete |
 | RSRCH-01 | Phase 2: Research Mode | Complete |
 | RSRCH-02 | Phase 2: Research Mode | Complete |
@@ -190,11 +190,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | METH-03 | Phase 5: Oversight + Memory | Complete |
 | METH-04 | Phase 5: Oversight + Memory | Complete |
 | METH-05 | Phase 5: Oversight + Memory | Complete |
-| CHST-01 | Phase 6: Workflow + GSD Integration | Pending |
-| CHST-02 | Phase 6: Workflow + GSD Integration | Pending |
-| CHST-03 | Phase 6: Workflow + GSD Integration | Pending |
-| CHST-04 | Phase 6: Workflow + GSD Integration | Pending |
-| CHST-05 | Phase 6: Workflow + GSD Integration | Pending |
+| CHST-01 | Phase 6: Workflow + GSD Integration | Complete |
+| CHST-02 | Phase 6: Workflow + GSD Integration | Complete |
+| CHST-03 | Phase 6: Workflow + GSD Integration | Complete |
+| CHST-04 | Phase 6: Workflow + GSD Integration | Complete |
+| CHST-05 | Phase 6: Workflow + GSD Integration | Complete |
 
 **Coverage:**
 - v1 requirements: 60 total
