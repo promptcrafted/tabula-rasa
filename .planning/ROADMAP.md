@@ -36,7 +36,7 @@
   2. All agent prompts, rules, and skills reference the persona dynamically (from MEMORY.md or persona config) rather than using "Signe" literally
   3. Agent loads without errors after identity replacement -- all 5 modes and pipeline chaining still function
   4. A fresh user with no persona set sees generic/placeholder identity rather than "Signe"
-**Plans:** 2 plans
+**Plans:** 1/2 plans executed
 
 Plans:
 - [ ] 07-01-PLAN.md -- Privacy scrub: audit and remove all personal/private references
@@ -84,6 +84,6 @@ Plans:
 | 4. Design Modes | v1.0 | 2/2 | Complete | 2026-03-08 |
 | 5. Oversight + Memory | v1.0 | 4/4 | Complete | 2026-03-08 |
 | 6. Workflow + GSD Integration | v1.0 | 2/2 | Complete | 2026-03-08 |
-| 7. Privacy Scrub & Dynamic Identity | v1.1 | 0/2 | Not started | - |
+| 7. Privacy Scrub & Dynamic Identity | 1/2 | In Progress|  | - |
 | 8. Setup Workflow | v1.1 | 0/2 | Not started | - |
 | 9. Packaging & Documentation | v1.1 | 0/2 | Not started | - |
