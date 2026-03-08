@@ -64,11 +64,11 @@ Plans:
   3. Each milestone in the plan has specific, verifiable acceptance criteria -- not vague goals
   4. Every plan explicitly states what is in scope and out of scope with reasoning for each boundary
   5. Phase ordering includes explicit rationale based on dependencies, risk, and value delivery
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 03-01: TBD
-- [ ] 03-02: TBD
+- [ ] 03-01-PLAN.md -- Planning agent and skill: signe-planner.md with decomposition methodology, signe-plan SKILL.md with argument routing
+- [ ] 03-02-PLAN.md -- Integration, deployment, and end-to-end validation: update CLAUDE.md/signe.md/delegation, deploy to ~/.claude/, human-verify
 
 ### Phase 4: Design Modes
 **Goal**: Users can invoke four design presets (system architecture, UI/UX, agent design, product design) through a single design skill, each producing structured deliverables
