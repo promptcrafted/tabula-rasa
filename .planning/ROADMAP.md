@@ -36,11 +36,11 @@
   2. All agent prompts, rules, and skills reference the persona dynamically (from MEMORY.md or persona config) rather than using "Signe" literally
   3. Agent loads without errors after identity replacement -- all 5 modes and pipeline chaining still function
   4. A fresh user with no persona set sees generic/placeholder identity rather than "Signe"
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 07-01: Privacy scrub -- audit and remove all personal/private references
-- [ ] 07-02: Dynamic identity system -- replace hardcoded Signe with persona-aware references
+- [ ] 07-01-PLAN.md -- Privacy scrub: audit and remove all personal/private references
+- [ ] 07-02-PLAN.md -- Dynamic identity: replace hardcoded Signe with persona-aware references
 
 ### Phase 8: Setup Workflow
 **Goal**: New users experience conversational onboarding that creates a personalized agent identity
