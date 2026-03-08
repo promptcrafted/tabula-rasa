@@ -42,35 +42,35 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Design Mode -- System Architecture
 
-- [ ] **ARCH-01**: User can invoke system design via `/signe-design` skill (architecture preset) and Signe spawns `signe-designer` agent
-- [ ] **ARCH-02**: Designer defines component boundaries (name, responsibility, interface, dependencies) for each system component
-- [ ] **ARCH-03**: Designer documents data flow (input -> processing -> output) for each major flow with format/protocol notes
-- [ ] **ARCH-04**: Designer specifies API contracts (input types, output types, error cases, versioning) for each component boundary
-- [ ] **ARCH-05**: Designer produces technology decision records (ADRs) with decision, context, alternatives, rationale, consequences
-- [ ] **ARCH-06**: Designer specifies file/folder structure with purpose annotations
+- [x] **ARCH-01**: User can invoke system design via `/signe-design` skill (architecture preset) and Signe spawns `signe-designer` agent
+- [x] **ARCH-02**: Designer defines component boundaries (name, responsibility, interface, dependencies) for each system component
+- [x] **ARCH-03**: Designer documents data flow (input -> processing -> output) for each major flow with format/protocol notes
+- [x] **ARCH-04**: Designer specifies API contracts (input types, output types, error cases, versioning) for each component boundary
+- [x] **ARCH-05**: Designer produces technology decision records (ADRs) with decision, context, alternatives, rationale, consequences
+- [x] **ARCH-06**: Designer specifies file/folder structure with purpose annotations
 
 ### Design Mode -- UI/UX
 
-- [ ] **UIUX-01**: User can invoke UI/UX design via `/signe-design` skill (UI/UX preset)
-- [ ] **UIUX-02**: Designer maps user flows (entry point -> decision points -> outcomes) for each major user journey
-- [ ] **UIUX-03**: Designer specifies component hierarchy (atomic -> composite -> page-level) with props/variants
-- [ ] **UIUX-04**: Designer generates wireframes (HTML or detailed text specs) for key screens
-- [ ] **UIUX-05**: Designer specifies accessibility requirements (WCAG level, keyboard nav, screen reader) per component
+- [x] **UIUX-01**: User can invoke UI/UX design via `/signe-design` skill (UI/UX preset)
+- [x] **UIUX-02**: Designer maps user flows (entry point -> decision points -> outcomes) for each major user journey
+- [x] **UIUX-03**: Designer specifies component hierarchy (atomic -> composite -> page-level) with props/variants
+- [x] **UIUX-04**: Designer generates wireframes (HTML or detailed text specs) for key screens
+- [x] **UIUX-05**: Designer specifies accessibility requirements (WCAG level, keyboard nav, screen reader) per component
 
 ### Design Mode -- Agent Design
 
-- [ ] **AGNT-01**: User can invoke agent design via `/signe-design` skill (agent preset)
-- [ ] **AGNT-02**: Designer generates complete YAML frontmatter agent definitions (name, description, tools, model, permissionMode, maxTurns, skills, memory, hooks)
-- [ ] **AGNT-03**: Designer applies structured prompt engineering methodology (role definition, context injection, output format, guardrails, examples)
-- [ ] **AGNT-04**: Designer selects appropriate tools and scopes permissions per agent (explicit allowlists, disallowedTools)
-- [ ] **AGNT-05**: Designer packages reusable knowledge as skills with proper frontmatter and directory placement
+- [x] **AGNT-01**: User can invoke agent design via `/signe-design` skill (agent preset)
+- [x] **AGNT-02**: Designer generates complete YAML frontmatter agent definitions (name, description, tools, model, permissionMode, maxTurns, skills, memory, hooks)
+- [x] **AGNT-03**: Designer applies structured prompt engineering methodology (role definition, context injection, output format, guardrails, examples)
+- [x] **AGNT-04**: Designer selects appropriate tools and scopes permissions per agent (explicit allowlists, disallowedTools)
+- [x] **AGNT-05**: Designer packages reusable knowledge as skills with proper frontmatter and directory placement
 
 ### Design Mode -- Product
 
-- [ ] **PROD-01**: User can invoke product design via `/signe-design` skill (product preset)
-- [ ] **PROD-02**: Designer generates user stories ("As a [persona], I want [action] so that [value]") with acceptance criteria
-- [ ] **PROD-03**: Designer scopes and prioritizes features (MoSCoW or similar) with rationale for each priority level
-- [ ] **PROD-04**: Designer maps end-to-end user experience across features with functional milestones
+- [x] **PROD-01**: User can invoke product design via `/signe-design` skill (product preset)
+- [x] **PROD-02**: Designer generates user stories ("As a [persona], I want [action] so that [value]") with acceptance criteria
+- [x] **PROD-03**: Designer scopes and prioritizes features (MoSCoW or similar) with rationale for each priority level
+- [x] **PROD-04**: Designer maps end-to-end user experience across features with functional milestones
 
 ### Oversight Mode
 
@@ -159,26 +159,26 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PLAN-05 | Phase 3: Planning Mode | Complete |
 | PLAN-06 | Phase 3: Planning Mode | Complete |
 | PLAN-07 | Phase 3: Planning Mode | Complete |
-| ARCH-01 | Phase 4: Design Modes | Pending |
-| ARCH-02 | Phase 4: Design Modes | Pending |
-| ARCH-03 | Phase 4: Design Modes | Pending |
-| ARCH-04 | Phase 4: Design Modes | Pending |
-| ARCH-05 | Phase 4: Design Modes | Pending |
-| ARCH-06 | Phase 4: Design Modes | Pending |
-| UIUX-01 | Phase 4: Design Modes | Pending |
-| UIUX-02 | Phase 4: Design Modes | Pending |
-| UIUX-03 | Phase 4: Design Modes | Pending |
-| UIUX-04 | Phase 4: Design Modes | Pending |
-| UIUX-05 | Phase 4: Design Modes | Pending |
-| AGNT-01 | Phase 4: Design Modes | Pending |
-| AGNT-02 | Phase 4: Design Modes | Pending |
-| AGNT-03 | Phase 4: Design Modes | Pending |
-| AGNT-04 | Phase 4: Design Modes | Pending |
-| AGNT-05 | Phase 4: Design Modes | Pending |
-| PROD-01 | Phase 4: Design Modes | Pending |
-| PROD-02 | Phase 4: Design Modes | Pending |
-| PROD-03 | Phase 4: Design Modes | Pending |
-| PROD-04 | Phase 4: Design Modes | Pending |
+| ARCH-01 | Phase 4: Design Modes | Complete |
+| ARCH-02 | Phase 4: Design Modes | Complete |
+| ARCH-03 | Phase 4: Design Modes | Complete |
+| ARCH-04 | Phase 4: Design Modes | Complete |
+| ARCH-05 | Phase 4: Design Modes | Complete |
+| ARCH-06 | Phase 4: Design Modes | Complete |
+| UIUX-01 | Phase 4: Design Modes | Complete |
+| UIUX-02 | Phase 4: Design Modes | Complete |
+| UIUX-03 | Phase 4: Design Modes | Complete |
+| UIUX-04 | Phase 4: Design Modes | Complete |
+| UIUX-05 | Phase 4: Design Modes | Complete |
+| AGNT-01 | Phase 4: Design Modes | Complete |
+| AGNT-02 | Phase 4: Design Modes | Complete |
+| AGNT-03 | Phase 4: Design Modes | Complete |
+| AGNT-04 | Phase 4: Design Modes | Complete |
+| AGNT-05 | Phase 4: Design Modes | Complete |
+| PROD-01 | Phase 4: Design Modes | Complete |
+| PROD-02 | Phase 4: Design Modes | Complete |
+| PROD-03 | Phase 4: Design Modes | Complete |
+| PROD-04 | Phase 4: Design Modes | Complete |
 | OVRS-01 | Phase 5: Oversight + Memory | Pending |
 | OVRS-02 | Phase 5: Oversight + Memory | Pending |
 | OVRS-03 | Phase 5: Oversight + Memory | Pending |

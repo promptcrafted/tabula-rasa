@@ -83,7 +83,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 04-01-PLAN.md -- Design agent and skill: signe-designer.md with four preset methodologies, signe-design SKILL.md with preset routing
+- [x] 04-01-PLAN.md -- Design agent and skill: signe-designer.md with four preset methodologies, signe-design SKILL.md with preset routing
 - [ ] 04-02-PLAN.md -- Integration, deployment, and end-to-end validation: update CLAUDE.md/signe.md/delegation, deploy to ~/.claude/, human-verify all four presets
 
 ### Phase 5: Oversight + Memory
@@ -130,6 +130,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | 1. Foundation | 3/3 | Complete   | 2026-03-08 |
 | 2. Research Mode | 2/2 | Complete   | 2026-03-08 |
 | 3. Planning Mode | 2/2 | Complete | 2026-03-08 |
-| 4. Design Modes | 0/2 | In progress | - |
+| 4. Design Modes | 1/2 | In progress | - |
 | 5. Oversight + Memory | 0/3 | Not started | - |
 | 6. Workflow + GSD Integration | 0/3 | Not started | - |
