@@ -13,7 +13,7 @@ Signe is built bottom-up: foundation files and naming conventions first, then in
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Global installation skeleton with CLAUDE.md, settings.json, rules, hooks, and naming conventions (completed 2026-03-08)
-- [ ] **Phase 2: Research Mode** - Multi-source research agent with confidence scoring, iterative refinement, and structured output
+- [x] **Phase 2: Research Mode** - Multi-source research agent with confidence scoring, iterative refinement, and structured output (completed 2026-03-08)
 - [ ] **Phase 3: Planning Mode** - Goal decomposition agent with dependency mapping, requirements extraction, and scope management
 - [ ] **Phase 4: Design Modes** - Four design presets (architecture, UI/UX, agent, product) under a single design skill
 - [ ] **Phase 5: Oversight + Memory** - Code review agent with quality gates, progress tracking, and subagent methodology with persistent playbook
@@ -52,7 +52,7 @@ Plans:
 
 Plans:
 - [x] 02-01-PLAN.md -- Research agent and skill: signe-researcher.md with full methodology, signe-research SKILL.md with preset routing
-- [ ] 02-02-PLAN.md -- Integration, deployment, and end-to-end validation: update CLAUDE.md/signe.md/delegation, deploy to ~/.claude/, human-verify
+- [x] 02-02-PLAN.md -- Integration, deployment, and end-to-end validation: update CLAUDE.md/signe.md/delegation, deploy to ~/.claude/, human-verify
 
 ### Phase 3: Planning Mode
 **Goal**: Users can invoke structured planning that decomposes goals into ordered, dependency-aware phases with verifiable acceptance criteria
@@ -130,7 +130,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 3/3 | Complete   | 2026-03-08 |
-| 2. Research Mode | 0/2 | Not started | - |
+| 2. Research Mode | 2/2 | Complete   | 2026-03-08 |
 | 3. Planning Mode | 0/2 | Not started | - |
 | 4. Design Modes | 0/4 | Not started | - |
 | 5. Oversight + Memory | 0/3 | Not started | - |

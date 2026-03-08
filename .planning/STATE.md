@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Research agent and skill created, integration and deployment next
-stopped_at: Completed 02-01-PLAN.md
-last_updated: "2026-03-08T03:52:36.201Z"
-last_activity: 2026-03-08 -- Plan 02-01 executed (research agent + skill)
+status: Phase 2 complete -- research mode deployed and human-verified end-to-end
+stopped_at: Completed 02-02-PLAN.md
+last_updated: "2026-03-08T04:01:00Z"
+last_activity: 2026-03-08 -- Plan 02-02 executed (integration, deployment, e2e validation)
 progress:
   total_phases: 6
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 5
-  completed_plans: 4
-  percent: 80
+  completed_plans: 5
+  percent: 100
 ---
 
 # Project State
@@ -21,34 +21,34 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-07)
 
 **Core value:** Signe must chain research -> plan -> design -> oversee in a single coherent workflow, delegating to specialized subagents she designs, tests, and validates herself.
-**Current focus:** Phase 2: Research Mode (IN PROGRESS)
+**Current focus:** Phase 2: Research Mode (COMPLETE)
 
 ## Current Position
 
-Phase: 2 of 6 (Research Mode) -- IN PROGRESS
-Plan: 1 of 2 in current phase (02-01 done, 02-02 remaining)
-Status: Research agent and skill created, integration and deployment next
-Last activity: 2026-03-08 -- Plan 02-01 executed (research agent + skill)
+Phase: 2 of 6 (Research Mode) -- COMPLETE
+Plan: 2 of 2 in current phase (all done)
+Status: Phase 2 complete -- research mode deployed and human-verified end-to-end
+Last activity: 2026-03-08 -- Plan 02-02 executed (integration, deployment, e2e validation)
 
-Progress: [████████░░] 80%
+Progress: [██████████] 100%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 4
+- Total plans completed: 5
 - Average duration: ~4min
-- Total execution time: ~17 min
+- Total execution time: ~22 min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 1. Foundation | 3/3 | ~14min | ~5min |
-| 2. Research Mode | 1/2 | ~3min | ~3min |
+| 2. Research Mode | 2/2 | ~8min | ~4min |
 
 **Recent Trend:**
-- Last 3 plans: 01-02 (3min), 01-03 (8min), 02-01 (3min)
-- Trend: Fast execution -- 02-01 was pure file creation with no deployment
+- Last 3 plans: 01-03 (8min), 02-01 (3min), 02-02 (5min)
+- Trend: Consistent fast execution across phases
 
 *Updated after each plan completion*
 
@@ -74,6 +74,9 @@ Recent decisions affecting current work:
 - [02-01]: 3-round iterative refinement with gap analysis between rounds and hard stop after Round 3
 - [02-01]: MCP graceful degradation: try specialized tools first, fall back to WebSearch + WebFetch
 - [02-01]: Preset auto-detection from query keywords when no explicit preset: prefix
+- [02-02]: Deployment uses direct cp to ~/.claude/ -- no installer or symlink indirection
+- [02-02]: Phase note updated from Phase 1 to Phase 2 in delegation rules to reflect expanded availability
+- [02-02]: MCP server inheritance in subagents confirmed working via end-to-end human validation
 
 ### Pending Todos
 
@@ -81,13 +84,13 @@ None yet.
 
 ### Blockers/Concerns
 
-- Research flag: MCP server inheritance in subagents needs empirical validation in Phase 2
+- ~~Research flag: MCP server inheritance in subagents needs empirical validation in Phase 2~~ RESOLVED -- confirmed working in 02-02 e2e validation
 - Research flag: Context handoff patterns need measurement in Phase 3
 - Research flag: GSD cross-contamination prevention needs validation in Phase 6
 
 ## Session Continuity
 
-Last session: 2026-03-08T03:52:36.199Z
-Stopped at: Completed 02-01-PLAN.md
+Last session: 2026-03-08T04:01:00Z
+Stopped at: Completed 02-02-PLAN.md (Phase 2 complete)
 Resume file: None
-Next: Execute 02-02-PLAN.md (integration, deployment, end-to-end validation)
+Next: Phase 3 Planning Mode -- plan and execute planning agent and skill
