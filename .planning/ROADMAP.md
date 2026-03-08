@@ -51,7 +51,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 02-01-PLAN.md -- Research agent and skill: signe-researcher.md with full methodology, signe-research SKILL.md with preset routing
+- [x] 02-01-PLAN.md -- Research agent and skill: signe-researcher.md with full methodology, signe-research SKILL.md with preset routing
 - [ ] 02-02-PLAN.md -- Integration, deployment, and end-to-end validation: update CLAUDE.md/signe.md/delegation, deploy to ~/.claude/, human-verify
 
 ### Phase 3: Planning Mode

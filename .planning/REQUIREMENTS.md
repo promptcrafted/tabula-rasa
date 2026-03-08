@@ -22,13 +22,13 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Research Mode
 
-- [ ] **RSRCH-01**: User can invoke research via `/signe-research` skill and Signe spawns `signe-researcher` agent
-- [ ] **RSRCH-02**: Signe-researcher orchestrates parallel searches across available MCP tools (Brave, Tavily, Exa, Context7, arxiv)
-- [ ] **RSRCH-03**: Research findings are tagged with confidence levels (HIGH/MEDIUM/LOW) based on source hierarchy (official docs > verified search > unverified)
-- [ ] **RSRCH-04**: Research agent performs iterative refinement -- reads results, identifies gaps, spawns follow-up queries until sufficient or limit hit
-- [ ] **RSRCH-05**: Research output is structured Markdown with inline citations, source URLs, confidence levels, and publication dates
-- [ ] **RSRCH-06**: Domain-specific research presets available (ecosystem survey, feasibility check, comparison, state-of-the-art review)
-- [ ] **RSRCH-07**: Research agent reads actual documents and papers (WebFetch, arxiv, Context7) rather than just search result snippets
+- [x] **RSRCH-01**: User can invoke research via `/signe-research` skill and Signe spawns `signe-researcher` agent
+- [x] **RSRCH-02**: Signe-researcher orchestrates parallel searches across available MCP tools (Brave, Tavily, Exa, Context7, arxiv)
+- [x] **RSRCH-03**: Research findings are tagged with confidence levels (HIGH/MEDIUM/LOW) based on source hierarchy (official docs > verified search > unverified)
+- [x] **RSRCH-04**: Research agent performs iterative refinement -- reads results, identifies gaps, spawns follow-up queries until sufficient or limit hit
+- [x] **RSRCH-05**: Research output is structured Markdown with inline citations, source URLs, confidence levels, and publication dates
+- [x] **RSRCH-06**: Domain-specific research presets available (ecosystem survey, feasibility check, comparison, state-of-the-art review)
+- [x] **RSRCH-07**: Research agent reads actual documents and papers (WebFetch, arxiv, Context7) rather than just search result snippets
 
 ### Planning Mode
 
@@ -145,13 +145,13 @@ Which phases cover which requirements. Updated during roadmap creation.
 | INFRA-08 | Phase 6: Workflow + GSD Integration | Pending |
 | INFRA-09 | Phase 6: Workflow + GSD Integration | Pending |
 | INFRA-10 | Phase 1: Foundation | Complete |
-| RSRCH-01 | Phase 2: Research Mode | Pending |
-| RSRCH-02 | Phase 2: Research Mode | Pending |
-| RSRCH-03 | Phase 2: Research Mode | Pending |
-| RSRCH-04 | Phase 2: Research Mode | Pending |
-| RSRCH-05 | Phase 2: Research Mode | Pending |
-| RSRCH-06 | Phase 2: Research Mode | Pending |
-| RSRCH-07 | Phase 2: Research Mode | Pending |
+| RSRCH-01 | Phase 2: Research Mode | Complete |
+| RSRCH-02 | Phase 2: Research Mode | Complete |
+| RSRCH-03 | Phase 2: Research Mode | Complete |
+| RSRCH-04 | Phase 2: Research Mode | Complete |
+| RSRCH-05 | Phase 2: Research Mode | Complete |
+| RSRCH-06 | Phase 2: Research Mode | Complete |
+| RSRCH-07 | Phase 2: Research Mode | Complete |
 | PLAN-01 | Phase 3: Planning Mode | Pending |
 | PLAN-02 | Phase 3: Planning Mode | Pending |
 | PLAN-03 | Phase 3: Planning Mode | Pending |
