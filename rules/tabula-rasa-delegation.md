@@ -2,7 +2,7 @@
 
 ## Core Principle
 
-The agent is a flat orchestrator. The main `signe.md` thread is the only entity that spawns subagents. Subagents execute their task and return results -- they never spawn additional agents.
+The agent is a flat orchestrator. The main `tabula-rasa.md` thread is the only entity that spawns subagents. Subagents execute their task and return results -- they never spawn additional agents.
 
 ## When to Delegate
 
@@ -20,30 +20,30 @@ Do NOT delegate when:
 
 | Skill | Agent | Purpose | Status |
 |-------|-------|---------|--------|
-| `/signe-health` | `signe-test-agent` | Installation validation | Available |
-| `/signe-research` | `signe-researcher` | Multi-source investigation | Available |
-| `/signe-plan` | `signe-planner` | Goal decomposition | Available |
-| `/signe-design` | `signe-designer` | Architecture, UI/UX, agent, product design | Available |
-| `/signe-oversee` | `signe-overseer` | Code review, quality gates | Available |
-| `/signe` | `signe` (self) | Multi-mode workflow chaining | Available |
+| `/tabula-rasa-health` | `tabula-rasa-test-agent` | Installation validation | Available |
+| `/tabula-rasa-research` | `tabula-rasa-researcher` | Multi-source investigation | Available |
+| `/tabula-rasa-plan` | `tabula-rasa-planner` | Goal decomposition | Available |
+| `/tabula-rasa-design` | `tabula-rasa-designer` | Architecture, UI/UX, agent, product design | Available |
+| `/tabula-rasa-oversee` | `tabula-rasa-overseer` | Code review, quality gates | Available |
+| `/tabula-rasa` | `tabula-rasa` (self) | Multi-mode workflow chaining | Available |
 
-All mode agents are available: `signe-test-agent`, `signe-researcher`, `signe-planner`, `signe-designer`, `signe-overseer`, and `signe` (self, for workflow chaining). Do not attempt to spawn agents that do not exist.
+All mode agents are available: `tabula-rasa-test-agent`, `tabula-rasa-researcher`, `tabula-rasa-planner`, `tabula-rasa-designer`, `tabula-rasa-overseer`, and `tabula-rasa` (self, for workflow chaining). Do not attempt to spawn agents that do not exist.
 
 ## Delegation Decision Tree
 
-1. User invokes a `/signe-*` skill -> route to the mapped agent.
+1. User invokes a `/tabula-rasa-*` skill -> route to the mapped agent.
 2. User asks the agent directly -> determine which mode fits:
-   - "Research X" -> `/signe-research`
-   - "Plan X" -> `/signe-plan`
-   - "Design X" -> `/signe-design`
-   - "Review X" / "Check X" -> `/signe-oversee`
-   - Multi-step workflow -> `/signe` (chains modes sequentially)
+   - "Research X" -> `/tabula-rasa-research`
+   - "Plan X" -> `/tabula-rasa-plan`
+   - "Design X" -> `/tabula-rasa-design`
+   - "Review X" / "Check X" -> `/tabula-rasa-oversee`
+   - Multi-step workflow -> `/tabula-rasa` (chains modes sequentially)
 3. No mode fits -> handle directly without spawning a subagent.
 
 ## Anti-Patterns
 
 ### No Nested Spawning
-Subagents CANNOT spawn other subagents. If `signe-researcher` needs a sub-task done, it must complete it itself or return control to the main thread with a recommendation to spawn another agent.
+Subagents CANNOT spawn other subagents. If `tabula-rasa-researcher` needs a sub-task done, it must complete it itself or return control to the main thread with a recommendation to spawn another agent.
 
 ### No Over-Delegation
 Maximum 5 concurrent subagents at any time. If more parallelism is needed, queue tasks and process in batches.

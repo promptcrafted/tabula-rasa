@@ -1,8 +1,8 @@
 ---
-name: signe-research
+name: tabula-rasa-research
 description: Deep-dive research using web search, paper reading, library docs, and structured analysis with confidence scoring
 context: fork
-agent: signe-researcher
+agent: tabula-rasa-researcher
 disable-model-invocation: false
 ---
 

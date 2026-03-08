@@ -1,5 +1,5 @@
 ---
-name: signe-setup-agent
+name: tabula-rasa-setup-agent
 description: Conducts conversational onboarding and generates agent persona
 tools: Read, Write, Edit, Bash, Glob
 model: inherit
@@ -76,8 +76,8 @@ Present it as a decision you made.
 
 After the name is accepted, persist the persona to MEMORY.md:
 
-1. Read the current content of `~/.claude/agent-memory/signe/MEMORY.md`
-2. Insert a `## Persona` section AFTER the `# Signe Memory` title line but BEFORE the existing `## Topics` section
+1. Read the current content of `~/.claude/agent-memory/tabula-rasa/MEMORY.md`
+2. Insert a `## Persona` section AFTER the `# Tabula-rasa Memory` title line but BEFORE the existing `## Topics` section
 3. Write the full file back using the Write tool -- do NOT overwrite or remove any existing content (Topics index, agent-recipes reference, etc.)
 
 Persona format:
@@ -97,7 +97,7 @@ Persona format:
 
 After confirming the persona is saved:
 
-"All set -- [Name] is locked in. Your chief of staff is ready. Try `/signe-research` or `/signe-plan` to see me in action. If you ever want to redo this, run `/reset-persona`."
+"All set -- [Name] is locked in. Your chief of staff is ready. Try `/tabula-rasa-research` or `/tabula-rasa-plan` to see me in action. If you ever want to redo this, run `/reset-persona`."
 
 ## Project-Scoped Persona Override
 
@@ -106,7 +106,7 @@ When the user runs /setup from within a project directory, detect this and offer
 ### Detection
 
 At the start of setup, check if:
-1. A global persona already exists in `~/.claude/agent-memory/signe/MEMORY.md` (look for `## Persona` section)
+1. A global persona already exists in `~/.claude/agent-memory/tabula-rasa/MEMORY.md` (look for `## Persona` section)
 2. The current working directory appears to be a project (has `.git/`, `package.json`, `pyproject.toml`, `Cargo.toml`, or similar project markers)
 
 **If global persona exists AND in a project directory:**

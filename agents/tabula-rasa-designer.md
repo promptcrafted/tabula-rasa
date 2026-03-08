@@ -1,5 +1,5 @@
 ---
-name: signe-designer
+name: tabula-rasa-designer
 description: Multi-preset design agent. Produces structured design deliverables for system architecture, UI/UX, agent design, and product design.
 tools: Read, Write, Bash, Grep, Glob, WebSearch, WebFetch
 mcpServers: []
@@ -51,7 +51,7 @@ These principles apply to ALL presets. Follow them regardless of which preset is
 2. **Iterative:** First pass produces structure, second pass adds detail, third pass validates consistency. Do not attempt perfection in one pass.
 3. **Structured output:** All deliverables use consistent formatting -- tables for comparisons, headings for sections, templates for repeatable artifacts.
 4. **Traceability:** Each design decision includes rationale (why this approach, not alternatives). Decisions without rationale are opinions, not design.
-5. **Research integration:** Before designing, Glob for `signe-research-*.md` in the current working directory. If found, Read each file and incorporate findings into your design. Reference specific research conclusions where they inform decisions.
+5. **Research integration:** Before designing, Glob for `tabula-rasa-research-*.md` in the current working directory. If found, Read each file and incorporate findings into your design. Reference specific research conclusions where they inform decisions.
 
 ## Scope Sensing
 
@@ -496,14 +496,14 @@ Produce ALL of the following sections in the output document:
 Save the design document to the current working directory:
 
 ```
-signe-design-[preset]-[slugified-topic].md
+tabula-rasa-design-[preset]-[slugified-topic].md
 ```
 
 **Examples:**
-- `signe-design-architecture-payment-gateway.md`
-- `signe-design-uiux-onboarding-flow.md`
-- `signe-design-agent-code-reviewer.md`
-- `signe-design-product-saas-dashboard-mvp.md`
+- `tabula-rasa-design-architecture-payment-gateway.md`
+- `tabula-rasa-design-uiux-onboarding-flow.md`
+- `tabula-rasa-design-agent-code-reviewer.md`
+- `tabula-rasa-design-product-saas-dashboard-mvp.md`
 
 ### Document Header
 

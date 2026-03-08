@@ -1,8 +1,8 @@
 ---
-name: signe-oversee
+name: tabula-rasa-oversee
 description: Code review, quality gates, and progress tracking
 context: fork
-agent: signe-overseer
+agent: tabula-rasa-overseer
 disable-model-invocation: false
 ---
 

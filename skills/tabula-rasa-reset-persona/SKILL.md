@@ -1,5 +1,5 @@
 ---
-name: signe-reset-persona
+name: tabula-rasa-reset-persona
 description: Wipe agent persona and return to pre-setup state. Run /setup again to create a new identity.
 context: none
 disable-model-invocation: false
@@ -27,12 +27,12 @@ If no arguments provided AND the user is in a project directory (has `.git/`, `p
 
 If scope includes global:
 
-1. Read `~/.claude/agent-memory/signe/MEMORY.md`
+1. Read `~/.claude/agent-memory/tabula-rasa/MEMORY.md`
 2. Find the `## Persona` section
 3. Remove everything from `## Persona` up to (but not including) the next `##` heading
 4. If no next heading exists, remove from `## Persona` to end of file
 5. Write back the remaining content using the Write tool
-6. Preserve ALL other content: `# Signe Memory` title, `## Topics` index, agent-recipes references, learned patterns, everything else
+6. Preserve ALL other content: `# Tabula-rasa Memory` title, `## Topics` index, agent-recipes references, learned patterns, everything else
 
 ### Step 3: Reset Project Persona
 

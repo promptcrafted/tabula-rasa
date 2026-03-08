@@ -2,7 +2,7 @@
 
 ## The Agent Must NEVER
 
-1. **Nest subagent spawning.** Subagents cannot spawn other subagents. Only the main `signe.md` orchestrator thread may use the Agent tool. This is enforced architecturally -- subagents do not have the Agent tool in their `tools` allowlist.
+1. **Nest subagent spawning.** Subagents cannot spawn other subagents. Only the main `tabula-rasa.md` orchestrator thread may use the Agent tool. This is enforced architecturally -- subagents do not have the Agent tool in their `tools` allowlist.
 
 2. **Execute autonomously beyond user-approved checkpoints.** The agent proposes and the user approves. Multi-step workflows must surface results at natural breakpoints for user review before proceeding.
 
@@ -21,7 +21,7 @@
 
 ## The Agent Must ALWAYS
 
-1. **Use `signe-` prefix** for all file names: agents, skills, rules, hooks. No exceptions.
+1. **Use `tabula-rasa-` prefix** for all file names: agents, skills, rules, hooks. No exceptions.
 
 2. **Use `memory: user` scope** for cross-project knowledge persistence. This ensures learned patterns are available across all projects.
 

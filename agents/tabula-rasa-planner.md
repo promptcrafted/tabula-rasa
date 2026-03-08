@@ -1,5 +1,5 @@
 ---
-name: signe-planner
+name: tabula-rasa-planner
 description: Goal decomposition agent. Breaks high-level goals into ordered phases with dependencies, acceptance criteria, and scope boundaries.
 tools: Read, Write, Bash, Grep, Glob
 model: inherit
@@ -26,7 +26,7 @@ If the goal is too vague to decompose meaningfully (e.g., "make it better"), out
 
 **BEFORE starting decomposition, search for existing research output.**
 
-1. Glob for `signe-research-*.md` in the current working directory.
+1. Glob for `tabula-rasa-research-*.md` in the current working directory.
 2. Also check for `FEATURES.md`, `STACK.md`, `PITFALLS.md` (alternative naming conventions).
 3. If research files are found:
    - Read each file.
@@ -35,7 +35,7 @@ If the goal is too vague to decompose meaningfully (e.g., "make it better"), out
    - Reference specific research findings in the plan where they influence decisions.
 4. If no research files are found:
    - Proceed with planning based on the goal alone.
-   - If the goal involves technology decisions that would benefit from investigation, recommend running `/signe-research` first in the recap output.
+   - If the goal involves technology decisions that would benefit from investigation, recommend running `/tabula-rasa-research` first in the recap output.
 
 ## Planning Methodology
 
@@ -136,7 +136,7 @@ If the goal involves choices the planner is not qualified to make (technology se
 
 ### Step 1: Write Plan Document
 
-Write the full plan to a file named `signe-plan-[slugified-goal].md` in the current working directory.
+Write the full plan to a file named `tabula-rasa-plan-[slugified-goal].md` in the current working directory.
 
 **Template:**
 
@@ -195,7 +195,7 @@ Write the full plan to a file named `signe-plan-[slugified-goal].md` in the curr
 ## Research Integration
 
 [If research output was found, summarize how it informed the plan.
-If not, state "No research output found." and recommend /signe-research if applicable.]
+If not, state "No research output found." and recommend /tabula-rasa-research if applicable.]
 ```
 
 ### Step 2: Return Recap to Conversation
@@ -227,7 +227,7 @@ Keep the recap to ~20 lines. The user reads the full plan for detail.
 ## Safety Constraints
 
 1. **Do not modify or delete any existing user files.** Only create new files (the plan document).
-2. **Do not spawn other agents.** You do not have the Agent tool. If research is needed, recommend `/signe-research` in the output.
-3. **Do not perform web research.** You do not have web tools. If the goal requires technology decisions that would benefit from investigation, recommend `/signe-research` first.
+2. **Do not spawn other agents.** You do not have the Agent tool. If research is needed, recommend `/tabula-rasa-research` in the output.
+3. **Do not perform web research.** You do not have web tools. If the goal requires technology decisions that would benefit from investigation, recommend `/tabula-rasa-research` first.
 4. **If the goal is too vague**, ask for clarification in the recap rather than producing a speculative plan.
 5. Do not execute destructive Bash commands (no `rm`, `git push`, etc.). Bash is for file discovery and safe queries only.

@@ -1,5 +1,5 @@
 ---
-name: signe-overseer
+name: tabula-rasa-overseer
 description: Code review and quality verification agent. Reviews implementation against plans, enforces quality gates, and tracks progress.
 tools: Read, Write, Bash, Grep, Glob
 model: inherit
@@ -37,10 +37,10 @@ Your task prompt contains the review scope passed via `$ARGUMENTS`.
 4. The remaining text after the scope prefix (or the entire text if no prefix) is the **review target** -- a project path, phase identifier, or file list.
 
 **Examples:**
-- `scope:security signe/agents/` -- run security lens on the agents directory
+- `scope:security tabula-rasa/agents/` -- run security lens on the agents directory
 - `scope:plan Phase 4` -- run plan gap analysis for Phase 4
 - `scope:gate` -- run quality gate verdict for the entire project
-- `Review the signe project` -- full review of the signe project (no scope prefix)
+- `Review the tabula-rasa project` -- full review of the tabula-rasa project (no scope prefix)
 
 ## Five-Lens Review Methodology
 
@@ -327,10 +327,10 @@ Issues that affect maintainability but not functionality or security.
 
 Write the complete review report to a file in the current working directory.
 
-**File naming:** `signe-review-[date]-[scope].md`
+**File naming:** `tabula-rasa-review-[date]-[scope].md`
 - `[date]` is the current date in YYYY-MM-DD format.
 - `[scope]` is the scope prefix if provided, or `full` if no prefix.
-- Examples: `signe-review-2026-03-08-security.md`, `signe-review-2026-03-08-full.md`
+- Examples: `tabula-rasa-review-2026-03-08-security.md`, `tabula-rasa-review-2026-03-08-full.md`
 
 **Report structure:**
 
@@ -339,7 +339,7 @@ Write the complete review report to a file in the current working directory.
 
 **Date:** [YYYY-MM-DD]
 **Scope:** [full | lens name | plan | progress | gate]
-**Reviewer:** signe-overseer
+**Reviewer:** tabula-rasa-overseer
 
 ## Executive Summary
 [2-3 sentences: what was reviewed, key findings, verdict]

@@ -55,23 +55,23 @@ check_conflict() {
 }
 
 # Check agents
-for f in "$SCRIPT_DIR"/agents/signe*.md; do
+for f in "$SCRIPT_DIR"/agents/tabula-rasa*.md; do
     check_conflict "agents/$(basename "$f")"
 done
 
 # Check skills
-for d in "$SCRIPT_DIR"/skills/signe*/; do
+for d in "$SCRIPT_DIR"/skills/tabula-rasa*/; do
     dirname="$(basename "$d")"
     check_conflict "skills/$dirname/SKILL.md"
 done
 
 # Check rules
-for f in "$SCRIPT_DIR"/rules/signe-*.md; do
+for f in "$SCRIPT_DIR"/rules/tabula-rasa-*.md; do
     check_conflict "rules/$(basename "$f")"
 done
 
 # Check hooks
-check_conflict "hooks/signe-lifecycle.js"
+check_conflict "hooks/tabula-rasa-lifecycle.js"
 
 if [ ${#CONFLICTS[@]} -gt 0 ]; then
     BACKUP_DIR="$CLAUDE_HOME/backups/tabula-rasa-$(date +%Y%m%d-%H%M%S)"
@@ -95,35 +95,35 @@ COPIED=0
 
 # Agents
 mkdir -p "$CLAUDE_HOME/agents"
-for f in "$SCRIPT_DIR"/agents/signe*.md; do
+for f in "$SCRIPT_DIR"/agents/tabula-rasa*.md; do
     cp "$f" "$CLAUDE_HOME/agents/"
     COPIED=$((COPIED + 1))
 done
-ok "Agents: $(ls "$SCRIPT_DIR"/agents/signe*.md | wc -l) files"
+ok "Agents: $(ls "$SCRIPT_DIR"/agents/tabula-rasa*.md | wc -l) files"
 
 # Skills (preserve directory structure)
 mkdir -p "$CLAUDE_HOME/skills"
-for d in "$SCRIPT_DIR"/skills/signe*/; do
+for d in "$SCRIPT_DIR"/skills/tabula-rasa*/; do
     dirname="$(basename "$d")"
     mkdir -p "$CLAUDE_HOME/skills/$dirname"
     cp "$d"SKILL.md "$CLAUDE_HOME/skills/$dirname/SKILL.md"
     COPIED=$((COPIED + 1))
 done
-ok "Skills: $(ls -d "$SCRIPT_DIR"/skills/signe*/ | wc -l) directories"
+ok "Skills: $(ls -d "$SCRIPT_DIR"/skills/tabula-rasa*/ | wc -l) directories"
 
 # Rules
 mkdir -p "$CLAUDE_HOME/rules"
-for f in "$SCRIPT_DIR"/rules/signe-*.md; do
+for f in "$SCRIPT_DIR"/rules/tabula-rasa-*.md; do
     cp "$f" "$CLAUDE_HOME/rules/"
     COPIED=$((COPIED + 1))
 done
-ok "Rules: $(ls "$SCRIPT_DIR"/rules/signe-*.md | wc -l) files"
+ok "Rules: $(ls "$SCRIPT_DIR"/rules/tabula-rasa-*.md | wc -l) files"
 
 # Hooks
 mkdir -p "$CLAUDE_HOME/hooks"
-cp "$SCRIPT_DIR/hooks/signe-lifecycle.js" "$CLAUDE_HOME/hooks/"
+cp "$SCRIPT_DIR/hooks/tabula-rasa-lifecycle.js" "$CLAUDE_HOME/hooks/"
 COPIED=$((COPIED + 1))
-ok "Hooks: signe-lifecycle.js"
+ok "Hooks: tabula-rasa-lifecycle.js"
 
 # ── CLAUDE.md special handling ───────────────────────────────────────────────
 if [ ! -f "$CLAUDE_HOME/CLAUDE.md" ]; then
@@ -137,11 +137,11 @@ else
 fi
 
 # ── agent-memory directory ───────────────────────────────────────────────────
-if [ ! -d "$CLAUDE_HOME/agent-memory/signe" ]; then
-    mkdir -p "$CLAUDE_HOME/agent-memory/signe"
-    ok "Created agent-memory/signe/ directory"
+if [ ! -d "$CLAUDE_HOME/agent-memory/tabula-rasa" ]; then
+    mkdir -p "$CLAUDE_HOME/agent-memory/tabula-rasa"
+    ok "Created agent-memory/tabula-rasa/ directory"
 else
-    ok "agent-memory/signe/ already exists (preserved)"
+    ok "agent-memory/tabula-rasa/ already exists (preserved)"
 fi
 
 # ── settings-merge.json note ─────────────────────────────────────────────────
@@ -156,9 +156,9 @@ echo -e "${GREEN}Installation complete!${NC} ($COPIED files copied)"
 echo ""
 echo "Next steps:"
 echo "  1. Run 'claude' to start Claude Code"
-echo "  2. Type /signe-health to verify the installation"
+echo "  2. Type /tabula-rasa-health to verify the installation"
 echo "  3. Type /setup for first-time personalization"
 echo ""
 echo "The agent will introduce itself and learn about you during /setup."
-echo "After that, use /signe-research, /signe-plan, /signe-design,"
-echo "/signe-oversee, or /signe for the full pipeline."
+echo "After that, use /tabula-rasa-research, /tabula-rasa-plan, /tabula-rasa-design,"
+echo "/tabula-rasa-oversee, or /tabula-rasa for the full pipeline."

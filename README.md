@@ -24,11 +24,11 @@ Five modes, each backed by a specialist subagent:
 
 | Mode | Command | What it does |
 |------|---------|--------------|
-| Research | `/signe-research` | Multi-source investigation with confidence scoring |
-| Planning | `/signe-plan` | Goal decomposition with dependency mapping |
-| Design | `/signe-design` | Architecture, UI/UX, agent, or product design |
-| Oversight | `/signe-oversee` | Code review, quality gates, progress tracking |
-| Pipeline | `/signe` | Chain all modes into a single workflow |
+| Research | `/tabula-rasa-research` | Multi-source investigation with confidence scoring |
+| Planning | `/tabula-rasa-plan` | Goal decomposition with dependency mapping |
+| Design | `/tabula-rasa-design` | Architecture, UI/UX, agent, or product design |
+| Oversight | `/tabula-rasa-oversee` | Code review, quality gates, progress tracking |
+| Pipeline | `/tabula-rasa` | Chain all modes into a single workflow |
 
 ## How it works
 
@@ -37,7 +37,7 @@ tabula-rasa uses a flat orchestrator model. The main agent delegates to speciali
 ## Example interaction
 
 ```
-You: /signe-research JWT refresh token rotation patterns for Node.js
+You: /tabula-rasa-research JWT refresh token rotation patterns for Node.js
 
 Agent: Starting multi-source investigation...
 
@@ -74,7 +74,7 @@ When you run `/setup` for the first time, the agent starts a conversation to lea
 - How you prefer to communicate (concise vs. detailed, proactive vs. reactive)
 - Your habits and workflow preferences
 
-Based on your answers, it generates its own name and personality -- picking traits that complement your working style. This persona is stored in `~/.claude/agent-memory/signe/MEMORY.md` and loads automatically every session.
+Based on your answers, it generates its own name and personality -- picking traits that complement your working style. This persona is stored in `~/.claude/agent-memory/tabula-rasa/MEMORY.md` and loads automatically every session.
 
 You can also run `/setup` inside a project directory to create a project-specific persona that overrides the global one for that project. Use `/reset-persona` to start over.
 

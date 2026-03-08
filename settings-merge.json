@@ -1,8 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Agent(signe-*)",
-      "Skill(signe-* *)"
+      "Agent(tabula-rasa-*)",
+      "Skill(tabula-rasa-* *)"
     ]
   },
   "hooks": {
@@ -28,22 +28,22 @@
     ],
     "SubagentStart": [
       {
-        "matcher": "signe-.*",
+        "matcher": "tabula-rasa-.*",
         "hooks": [
           {
             "type": "command",
-            "command": "node \"C:/Users/minta/.claude/hooks/signe-lifecycle.js\""
+            "command": "node \"C:/Users/minta/.claude/hooks/tabula-rasa-lifecycle.js\""
           }
         ]
       }
     ],
     "SubagentStop": [
       {
-        "matcher": "signe-.*",
+        "matcher": "tabula-rasa-.*",
         "hooks": [
           {
             "type": "command",
-            "command": "node \"C:/Users/minta/.claude/hooks/signe-lifecycle.js\""
+            "command": "node \"C:/Users/minta/.claude/hooks/tabula-rasa-lifecycle.js\""
           }
         ]
       }

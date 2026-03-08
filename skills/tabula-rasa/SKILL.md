@@ -1,8 +1,8 @@
 ---
-name: signe
+name: tabula-rasa
 description: Full workflow orchestration -- chain research, planning, design, and oversight into a coherent end-to-end pipeline. Use when a goal needs multiple agent modes in sequence.
 context: fork
-agent: signe
+agent: tabula-rasa
 disable-model-invocation: true
 ---
 
@@ -23,7 +23,7 @@ Parse the first token for mode specifier:
 - Single mode names (research, plan, design, oversee): redirect to the specific skill
 
 If a single mode is requested, suggest using the dedicated skill instead
-(e.g., `/signe-research` for research-only).
+(e.g., `/tabula-rasa-research` for research-only).
 
 ### Workflow Execution
 

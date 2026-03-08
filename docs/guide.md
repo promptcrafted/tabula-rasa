@@ -6,9 +6,9 @@ Complete reference for all modes, setup, and persona features.
 
 tabula-rasa is a chief of staff agent system for Claude Code. It installs into `~/.claude/` and provides five specialist modes -- research, planning, design, oversight, and full pipeline chaining -- each backed by a dedicated subagent.
 
-**Architecture:** Flat orchestrator. The main agent (`signe.md`) is the only entity that spawns subagents. Subagents execute their task and return results -- they never spawn additional agents. This eliminates coordination complexity and keeps workflows predictable.
+**Architecture:** Flat orchestrator. The main agent (`tabula-rasa.md`) is the only entity that spawns subagents. Subagents execute their task and return results -- they never spawn additional agents. This eliminates coordination complexity and keeps workflows predictable.
 
-**Modes relate to each other:** Each mode can be used independently, or chained together via `/signe` (the full pipeline). A typical chain: research a topic, plan the implementation, design the architecture, then oversee the code review.
+**Modes relate to each other:** Each mode can be used independently, or chained together via `/tabula-rasa` (the full pipeline). A typical chain: research a topic, plan the implementation, design the architecture, then oversee the code review.
 
 **Memory:** The agent uses `MEMORY.md` with user scope to persist knowledge across sessions. It remembers your preferences, project context, and accumulated patterns.
 
@@ -33,12 +33,12 @@ bash install.sh
 1. **Pre-flight checks:** Verifies Claude Code CLI is installed and `~/.claude/` exists
 2. **Conflict detection:** If any target files already exist, backs them up to `~/.claude/backups/tabula-rasa-YYYYMMDD-HHMMSS/`
 3. **Copies files:**
-   - `agents/signe*.md` (7 agent definitions)
-   - `skills/signe*/SKILL.md` (8 skill directories)
-   - `rules/signe-*.md` (3 rule files)
-   - `hooks/signe-lifecycle.js` (subagent lifecycle hook)
+   - `agents/tabula-rasa*.md` (7 agent definitions)
+   - `skills/tabula-rasa*/SKILL.md` (8 skill directories)
+   - `rules/tabula-rasa-*.md` (3 rule files)
+   - `hooks/tabula-rasa-lifecycle.js` (subagent lifecycle hook)
 4. **CLAUDE.md handling:** Installs template only if no `~/.claude/CLAUDE.md` exists. Never overwrites your existing file.
-5. **Creates** `~/.claude/agent-memory/signe/` directory for persona storage
+5. **Creates** `~/.claude/agent-memory/tabula-rasa/` directory for persona storage
 
 ### settings.json
 
@@ -49,7 +49,7 @@ The install script does **not** auto-merge `settings.json`. Review `settings-mer
 Start Claude Code and run:
 
 ```
-/signe-health
+/tabula-rasa-health
 ```
 
 This spawns a read-only test agent that validates file presence and reports any issues.
@@ -83,7 +83,7 @@ Based on your answers, the agent generates its own identity:
 The persona is stored at:
 
 ```
-~/.claude/agent-memory/signe/MEMORY.md
+~/.claude/agent-memory/tabula-rasa/MEMORY.md
 ```
 
 The Persona section is placed at the top of `MEMORY.md` so it loads within the first 200 lines of context. It loads automatically every session -- you do not need to re-run `/setup`.
@@ -99,13 +99,13 @@ Subagents receive persona context through their task prompt. The main orchestrat
 **Multi-source investigation with confidence scoring.**
 
 ```
-/signe-research
+/tabula-rasa-research
 ```
 
 **Example prompts:**
 
-- `/signe-research` Compare WebSocket vs SSE for real-time notifications in a Django app
-- `/signe-research` What are the security implications of storing JWTs in localStorage vs httpOnly cookies?
+- `/tabula-rasa-research` Compare WebSocket vs SSE for real-time notifications in a Django app
+- `/tabula-rasa-research` What are the security implications of storing JWTs in localStorage vs httpOnly cookies?
 
 **What to expect:** The agent consults multiple sources (web search, documentation, papers), cross-references findings, and produces a structured report with:
 
@@ -121,13 +121,13 @@ Typical turn budget: 50 turns.
 **Goal decomposition with dependency mapping.**
 
 ```
-/signe-plan
+/tabula-rasa-plan
 ```
 
 **Example prompts:**
 
-- `/signe-plan` Break down migrating our monolith auth service to a separate microservice
-- `/signe-plan` Plan the v2 API redesign -- we need backward compatibility
+- `/tabula-rasa-plan` Break down migrating our monolith auth service to a separate microservice
+- `/tabula-rasa-plan` Plan the v2 API redesign -- we need backward compatibility
 
 **What to expect:** The agent decomposes your goal into phases with dependency ordering. Output includes:
 
@@ -144,7 +144,7 @@ Typical turn budget: 30 turns.
 **Architecture, UI/UX, agent, or product design with four presets.**
 
 ```
-/signe-design
+/tabula-rasa-design
 ```
 
 **Presets:**
@@ -160,8 +160,8 @@ The agent auto-detects the appropriate preset from your prompt, or you can speci
 
 **Example prompts:**
 
-- `/signe-design` Design the database schema for a multi-tenant SaaS billing system
-- `/signe-design` Design the onboarding flow for our mobile app (UI/UX)
+- `/tabula-rasa-design` Design the database schema for a multi-tenant SaaS billing system
+- `/tabula-rasa-design` Design the onboarding flow for our mobile app (UI/UX)
 
 **What to expect:** Structured design document with diagrams (text-based), trade-off analysis, and implementation recommendations. The agent follows a maker-checker approach -- treats its first draft as a starting point and iterates.
 
@@ -172,13 +172,13 @@ Typical turn budget: 40 turns.
 **Code review, quality gates, and progress tracking.**
 
 ```
-/signe-oversee
+/tabula-rasa-oversee
 ```
 
 **Example prompts:**
 
-- `/signe-oversee` Review the auth middleware changes in the last 3 commits
-- `/signe-oversee` Check our test coverage gaps in the payment module
+- `/tabula-rasa-oversee` Review the auth middleware changes in the last 3 commits
+- `/tabula-rasa-oversee` Check our test coverage gaps in the payment module
 
 **What to expect:** The agent reviews through five lenses:
 
@@ -197,13 +197,13 @@ Typical turn budget: 40 turns.
 **Chain all modes into a single workflow.**
 
 ```
-/signe
+/tabula-rasa
 ```
 
 **Example prompts:**
 
-- `/signe` I need to add real-time collaboration to our document editor. Research the options, plan the implementation, design the architecture, then review what we have so far.
-- `/signe` We are migrating from REST to GraphQL. Full analysis and plan.
+- `/tabula-rasa` I need to add real-time collaboration to our document editor. Research the options, plan the implementation, design the architecture, then review what we have so far.
+- `/tabula-rasa` We are migrating from REST to GraphQL. Full analysis and plan.
 
 **What to expect:** The agent chains modes sequentially:
 
@@ -234,7 +234,7 @@ Use `/reset-persona` to start over. Three modes:
 
 | Mode | Command | What it resets |
 |------|---------|----------------|
-| Global only (default) | `/reset-persona` | Global persona in `~/.claude/agent-memory/signe/MEMORY.md` |
+| Global only (default) | `/reset-persona` | Global persona in `~/.claude/agent-memory/tabula-rasa/MEMORY.md` |
 | Project only | `/reset-persona project` | Project-scoped persona only |
 | All | `/reset-persona all` | Both global and project personas |
 
@@ -246,23 +246,23 @@ After resetting, run `/setup` again to create a new persona.
 
 ### Validation
 
-Run `/signe-health` to check that all files are installed correctly. The health check agent verifies:
+Run `/tabula-rasa-health` to check that all files are installed correctly. The health check agent verifies:
 
 - Agent files present in `~/.claude/agents/`
 - Skill directories present in `~/.claude/skills/`
 - Rule files present in `~/.claude/rules/`
 - Hook file present in `~/.claude/hooks/`
-- Memory directory exists at `~/.claude/agent-memory/signe/`
+- Memory directory exists at `~/.claude/agent-memory/tabula-rasa/`
 
 ### Common issues
 
 **Agent not responding or modes not available**
 - Re-run `bash install.sh` from the repo directory
-- Check that `~/.claude/agents/signe.md` exists
-- Verify with `/signe-health`
+- Check that `~/.claude/agents/tabula-rasa.md` exists
+- Verify with `/tabula-rasa-health`
 
 **Persona not loading**
-- Check that `~/.claude/agent-memory/signe/MEMORY.md` exists and has a Persona section
+- Check that `~/.claude/agent-memory/tabula-rasa/MEMORY.md` exists and has a Persona section
 - Re-run `/setup` if the file is empty or missing
 
 **MCP tools not available for research**
@@ -275,15 +275,15 @@ Run `/signe-health` to check that all files are installed correctly. The health 
 
 ### File conventions
 
-All tabula-rasa files use the `signe-` prefix:
+All tabula-rasa files use the `tabula-rasa-` prefix:
 
 | Type | Location | Pattern |
 |------|----------|---------|
-| Agents | `~/.claude/agents/` | `signe*.md` |
-| Skills | `~/.claude/skills/` | `signe*/SKILL.md` |
-| Rules | `~/.claude/rules/` | `signe-*.md` |
-| Hooks | `~/.claude/hooks/` | `signe-lifecycle.js` |
-| Memory | `~/.claude/agent-memory/` | `signe/MEMORY.md` |
+| Agents | `~/.claude/agents/` | `tabula-rasa*.md` |
+| Skills | `~/.claude/skills/` | `tabula-rasa*/SKILL.md` |
+| Rules | `~/.claude/rules/` | `tabula-rasa-*.md` |
+| Hooks | `~/.claude/hooks/` | `tabula-rasa-lifecycle.js` |
+| Memory | `~/.claude/agent-memory/` | `tabula-rasa/MEMORY.md` |
 
 This prevents collision with your other Claude Code agents and skills.
 

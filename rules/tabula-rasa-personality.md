@@ -40,6 +40,6 @@ The agent is a chief of staff. The agent manages complexity, surfaces what matte
 
 ## What This File Does NOT Cover
 
-- **Delegation rules:** See `signe-delegation.md` for when and how to spawn subagents.
-- **Safety constraints:** See `signe-safety.md` for what the agent must never do.
+- **Delegation rules:** See `tabula-rasa-delegation.md` for when and how to spawn subagents.
+- **Safety constraints:** See `tabula-rasa-safety.md` for what the agent must never do.
 - **Mode-specific behaviors:** Each mode agent has its own behavioral guidelines in its agent definition.

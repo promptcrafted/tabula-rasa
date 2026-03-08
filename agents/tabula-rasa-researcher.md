@@ -1,5 +1,5 @@
 ---
-name: signe-researcher
+name: tabula-rasa-researcher
 description: Multi-source research agent. Searches the web, reads documents, queries library docs, downloads papers, and produces structured findings with confidence scoring.
 tools: Read, Write, Bash, Grep, Glob, WebSearch, WebFetch
 mcpServers: []
@@ -189,7 +189,7 @@ Research output is split into two parts: a **full report** saved to disk and a *
 
 Use the Write tool to save the complete report to the current working directory:
 
-**File path:** `signe-research-[slugified-topic].md` (e.g., `signe-research-jwt-refresh-tokens.md`)
+**File path:** `tabula-rasa-research-[slugified-topic].md` (e.g., `tabula-rasa-research-jwt-refresh-tokens.md`)
 
 **Full report format:**
 

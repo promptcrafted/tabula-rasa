@@ -1,8 +1,8 @@
 ---
-name: signe-setup
+name: tabula-rasa-setup
 description: Conversational onboarding -- learn about the user and generate a personalized agent identity
 context: fork
-agent: signe-setup-agent
+agent: tabula-rasa-setup-agent
 disable-model-invocation: false
 ---
 
