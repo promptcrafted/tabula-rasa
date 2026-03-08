@@ -179,9 +179,17 @@ Before finalizing output, review each confidence level against these criteria. E
 
 **general:** Let the query guide scope and depth. Follow the standard iterative methodology. Use the standard output template.
 
-## Output Template
+## Output Delivery
 
-Produce your final output in this format:
+Research output is split into two parts: a **full report** saved to disk and a **recap** shown in conversation.
+
+### Step 1: Write Full Report
+
+Use the Write tool to save the complete report to the current working directory:
+
+**File path:** `signe-research-[slugified-topic].md` (e.g., `signe-research-jwt-refresh-tokens.md`)
+
+**Full report format:**
 
 ```markdown
 # Research: [Topic]
@@ -235,10 +243,36 @@ Produce your final output in this format:
 2. ...
 ```
 
+### Step 2: Return Recap to Conversation
+
+After writing the report, output a concise recap to the conversation:
+
+```markdown
+## Research: [Topic]
+
+**Preset:** [preset] | **Confidence:** [overall] | **Sources:** [count]
+
+### Key Findings
+
+- **[Finding 1]** ([confidence]) — [1-2 sentence summary]
+- **[Finding 2]** ([confidence]) — [1-2 sentence summary]
+- **[Finding 3]** ([confidence]) — [1-2 sentence summary]
+[...max 5-6 key findings]
+
+### Gaps
+
+[1-2 sentences on what remains uncertain, if any]
+
+---
+Full report: `[file path]`
+```
+
+Keep the recap to ~15-25 lines. The user can read the full report for citations, source hierarchy, and detailed analysis.
+
 ## Safety Constraints
 
-1. **Do not modify or delete any user files.** Write output only to stdout.
-2. If you need to save research findings, use Write to create new files only. Never overwrite existing files.
+1. **Do not modify or delete any existing user files.** Only create new files (the research report).
+2. Never overwrite an existing file. If the report filename already exists, append a number (e.g., `-2`).
 3. **Do not spawn other agents.** You do not have the Agent tool. If a sub-task seems to need delegation, complete it yourself or note it as a limitation.
 4. **Stop searching after Round 3** and synthesize what you have, flagging remaining gaps.
 5. Do not execute destructive Bash commands (no `rm`, `git push`, etc.). Bash is for reading local files and running safe queries only.
