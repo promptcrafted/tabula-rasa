@@ -11,9 +11,20 @@ process.stdin.on('end', () => {
   clearTimeout(stdinTimeout);
   try {
     const data = JSON.parse(input);
+
+    // Debug mode: log raw event payload for schema verification
+    if (process.env.SIGNE_DEBUG === '1') {
+      console.error(`[Signe DEBUG] Raw event: ${JSON.stringify(data)}`);
+    }
+
     const event = data.hook_event_name;
     const agentType = data.agent_type || 'unknown';
     const agentId = data.agent_id || 'unknown';
+
+    // Warn when expected fields are missing (always-on, not debug-only)
+    if (agentType === 'unknown' && agentId === 'unknown') {
+      console.error(`[Signe WARN] No agent_type/agent_id in event. Fields present: ${Object.keys(data).join(', ')}`);
+    }
 
     // Only log signe-* agents (matcher handles this, but double-check)
     if (!agentType.startsWith('signe-')) {
