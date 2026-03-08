@@ -114,12 +114,11 @@ Plans:
   3. Signe proactively identifies risks, summarizes project status at milestones, and recommends next actions based on current state
   4. Maker-checker loops work end-to-end -- design agent produces, review agent critiques, and iteration continues until quality gate passes
   5. Mode-aware context handoff documents are generated when transitioning between workflow stages, tailored to the receiving mode
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 06-01: TBD
-- [ ] 06-02: TBD
-- [ ] 06-03: TBD
+- [ ] 06-01-PLAN.md -- Workflow chaining core: update signe.md with pipeline orchestration, proactive behaviors, GSD awareness, maker-checker loops; create /signe skill; revise safety constraints
+- [ ] 06-02-PLAN.md -- Integration, deployment, and end-to-end validation: update delegation/CLAUDE.md/guide/hook, deploy to ~/.claude/, human-verify workflow
 
 ## Progress
 
@@ -133,4 +132,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | 3. Planning Mode | 2/2 | Complete | 2026-03-08 |
 | 4. Design Modes | 2/2 | Complete | 2026-03-08 |
 | 5. Oversight + Memory | 4/4 | Complete | 2026-03-08 |
-| 6. Workflow + GSD Integration | 0/3 | Not started | - |
+| 6. Workflow + GSD Integration | 0/2 | Not started | - |
