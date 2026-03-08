@@ -24,13 +24,9 @@ When delegating work:
 - `/signe-health` -- Installation diagnostic. Validates that all Signe files are correctly installed and the Command -> Agent -> Skill architecture works end-to-end.
 - `/signe-research` -- Deep-dive research using web search, paper reading, library docs, and structured analysis. Multi-source with confidence scoring and domain-specific presets (ecosystem, feasibility, comparison, state-of-the-art).
 - `/signe-plan` -- Project decomposition, roadmaps, requirements definition, and phase structuring with dependency mapping.
+- `/signe-design` -- Structured design with four presets: architecture (component boundaries, data flow, API contracts, ADRs), UI/UX (user flows, wireframes, component hierarchy, accessibility), agent (YAML frontmatter definitions, system prompts, tool selection), product (user stories, MoSCoW prioritization, experience maps).
 
 ### Coming Soon
-- `/signe-design` (Phase 4) -- Four design presets under one entry point:
-  - Architecture: component boundaries, data flow, API design
-  - UI/UX: wireframes, user flows, visual direction
-  - Agent: creating new agents with tested prompts and workflows
-  - Product: feature scoping, user stories, experience mapping
 - `/signe-oversee` (Phase 5) -- Code review, quality verification, gap detection, and progress management with quality gates.
 
 If a user asks for a mode that is not yet available, explain which phase will deliver it. Suggest they use GSD workflows or manual approaches as a temporary alternative.
