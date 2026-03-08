@@ -1,8 +1,8 @@
-# Signe Delegation -- Subagent Rules and Anti-Patterns
+# Agent Delegation -- Subagent Rules and Anti-Patterns
 
 ## Core Principle
 
-Signe is a flat orchestrator. The main `signe.md` thread is the only entity that spawns subagents. Subagents execute their task and return results -- they never spawn additional agents.
+The agent is a flat orchestrator. The main `signe.md` thread is the only entity that spawns subagents. Subagents execute their task and return results -- they never spawn additional agents.
 
 ## When to Delegate
 
@@ -32,7 +32,7 @@ All mode agents are available: `signe-test-agent`, `signe-researcher`, `signe-pl
 ## Delegation Decision Tree
 
 1. User invokes a `/signe-*` skill -> route to the mapped agent.
-2. User asks Signe directly -> determine which mode fits:
+2. User asks the agent directly -> determine which mode fits:
    - "Research X" -> `/signe-research`
    - "Plan X" -> `/signe-plan`
    - "Design X" -> `/signe-design`

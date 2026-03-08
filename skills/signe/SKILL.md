@@ -1,6 +1,6 @@
 ---
 name: signe
-description: Full workflow orchestration -- chain research, planning, design, and oversight into a coherent end-to-end pipeline. Use when a goal needs multiple Signe modes in sequence.
+description: Full workflow orchestration -- chain research, planning, design, and oversight into a coherent end-to-end pipeline. Use when a goal needs multiple agent modes in sequence.
 context: fork
 agent: signe
 disable-model-invocation: true
