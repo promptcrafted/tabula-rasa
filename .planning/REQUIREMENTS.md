@@ -23,8 +23,8 @@ Requirements for public release. Each maps to roadmap phases.
 
 ### Documentation
 
-- [ ] **DOC-01**: README.md with features overview, install instructions, mode examples
-- [ ] **DOC-02**: User guide rewritten as generic guide with all modes documented
+- [x] **DOC-01**: README.md with features overview, install instructions, mode examples
+- [x] **DOC-02**: User guide rewritten as generic guide with all modes documented
 
 ## Future Requirements
 
@@ -65,8 +65,8 @@ Explicitly excluded. Documented to prevent scope creep.
 | PKG-01 | Phase 9 | Complete |
 | PKG-02 | Phase 7 | Complete |
 | PKG-03 | Phase 7 | Complete |
-| DOC-01 | Phase 9 | Pending |
-| DOC-02 | Phase 9 | Pending |
+| DOC-01 | Phase 9 | Complete |
+| DOC-02 | Phase 9 | Complete |
 
 **Coverage:**
 - v1.1 requirements: 10 total

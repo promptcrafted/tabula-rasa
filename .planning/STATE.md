@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: Public Release
-status: in_progress
-stopped_at: Completed 09-01 repo restructure and install script
-last_updated: "2026-03-08T22:14:27.730Z"
-last_activity: 2026-03-08 -- Completed 09-01 repo restructure and install script
+status: complete
+stopped_at: Completed 09-02 README and user guide -- all v1.1 plans done
+last_updated: "2026-03-08T22:19:30.000Z"
+last_activity: 2026-03-08 -- Completed 09-02 README and user guide
 progress:
   total_phases: 3
-  completed_phases: 2
+  completed_phases: 3
   total_plans: 6
-  completed_plans: 5
+  completed_plans: 6
   percent: 100
 ---
 
@@ -26,19 +26,19 @@ See: .planning/PROJECT.md (updated 2026-03-08)
 ## Current Position
 
 Phase: 9 of 9 (Packaging & Documentation)
-Plan: 1 of 2 in current phase
-Status: In Progress
-Last activity: 2026-03-08 -- Completed 09-01 repo restructure and install script
+Plan: 2 of 2 in current phase (COMPLETE)
+Status: Complete
+Last activity: 2026-03-08 -- Completed 09-02 README and user guide
 
-Progress: [████████░░] 83% (5/6 v1.1 plans)
+Progress: [██████████] 100% (6/6 v1.1 plans)
 
 ## Performance Metrics
 
 **Velocity:**
 - Total plans completed: 15 (v1.0)
-- v1.1 plans completed: 5
-- Average duration: 2.2min
-- Total execution time: 9min
+- v1.1 plans completed: 6
+- Average duration: 2.0min
+- Total execution time: 11min
 
 ## Accumulated Context
 
@@ -58,6 +58,8 @@ v1.1 decisions:
 - Reset removes only Persona sections, preserves all other MEMORY.md content
 - Source of truth for agent files is ~/.claude/ (Phase 7-8 updated in place)
 - install.sh never auto-merges settings.json -- user must manually merge
+- README uses direct developer tone with single example interaction (research mode)
+- Guide is reference-style at 292 lines, well under 500-line cap
 
 ### Pending Todos
 
@@ -69,6 +71,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-08T22:13:44Z
-Stopped at: Completed 09-01 repo restructure and install script
-Next: 09-02 (README and user guide)
+Last session: 2026-03-08T22:18:25Z
+Stopped at: Completed 09-02 README and user guide -- all v1.1 plans done
+Next: v1.1 milestone complete -- ready for public release
