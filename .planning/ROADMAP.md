@@ -52,11 +52,11 @@ Plans:
   3. On next session start, agent loads its persona automatically and uses the chosen name/personality throughout all interactions
   4. User runs `/setup` inside a project folder and gets a project-scoped persona that overrides the global one for that project
   5. User runs `/reset-persona` and persona is wiped, returning agent to pre-setup state ready for fresh onboarding
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 08-01: Core setup skill and persona persistence
-- [ ] 08-02: Project-scoped persona override and reset workflow
+- [ ] 08-01-PLAN.md -- Core setup skill and agent: conversational onboarding, persona generation, MEMORY.md persistence
+- [ ] 08-02-PLAN.md -- Project-scoped persona override, /reset-persona skill, end-to-end verification
 
 ### Phase 9: Packaging & Documentation
 **Goal**: Project is installable from GitHub with clear documentation for new users
