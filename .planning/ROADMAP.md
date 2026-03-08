@@ -12,7 +12,7 @@ Signe is built bottom-up: foundation files and naming conventions first, then in
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Global installation skeleton with CLAUDE.md, settings.json, rules, hooks, and naming conventions
+- [x] **Phase 1: Foundation** - Global installation skeleton with CLAUDE.md, settings.json, rules, hooks, and naming conventions (completed 2026-03-08)
 - [ ] **Phase 2: Research Mode** - Multi-source research agent with confidence scoring, iterative refinement, and structured output
 - [ ] **Phase 3: Planning Mode** - Goal decomposition agent with dependency mapping, requirements extraction, and scope management
 - [ ] **Phase 4: Design Modes** - Four design presets (architecture, UI/UX, agent, product) under a single design skill
@@ -34,9 +34,9 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 3 plans
 
 Plans:
-- [ ] 01-01-PLAN.md -- Core identity and rules: CLAUDE.md, rules files, lifecycle hook, memory directory
-- [ ] 01-02-PLAN.md -- Agents and settings: signe.md orchestrator, signe-test-agent, merged settings.json
-- [ ] 01-03-PLAN.md -- Health check skill and end-to-end deployment validation
+- [x] 01-01-PLAN.md -- Core identity and rules: CLAUDE.md, rules files, lifecycle hook, memory directory
+- [x] 01-02-PLAN.md -- Agents and settings: signe.md orchestrator, signe-test-agent, merged settings.json
+- [x] 01-03-PLAN.md -- Health check skill and end-to-end deployment validation
 
 ### Phase 2: Research Mode
 **Goal**: Users can invoke deep-dive research that orchestrates multiple sources, scores confidence, and produces structured findings
@@ -130,7 +130,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 2/3 | In Progress|  |
+| 1. Foundation | 3/3 | Complete   | 2026-03-08 |
 | 2. Research Mode | 0/3 | Not started | - |
 | 3. Planning Mode | 0/2 | Not started | - |
 | 4. Design Modes | 0/4 | Not started | - |
