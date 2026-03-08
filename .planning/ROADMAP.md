@@ -17,7 +17,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 3: Planning Mode** - Goal decomposition agent with dependency mapping, requirements extraction, and scope management (completed 2026-03-08)
 - [x] **Phase 4: Design Modes** - Four design presets (architecture, UI/UX, agent, product) under a single design skill (completed 2026-03-08)
 - [x] **Phase 5: Oversight + Memory** - Code review agent with quality gates, progress tracking, and subagent methodology with persistent playbook
-- [ ] **Phase 6: Workflow + GSD Integration** - Full workflow chaining, GSD orchestration, maker-checker loops, and chief-of-staff behaviors
+- [x] **Phase 6: Workflow + GSD Integration** - Full workflow chaining, GSD orchestration, maker-checker loops, and chief-of-staff behaviors (completed 2026-03-08)
 
 ## Phase Details
 
@@ -117,8 +117,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 06-01-PLAN.md -- Workflow chaining core: update signe.md with pipeline orchestration, proactive behaviors, GSD awareness, maker-checker loops; create /signe skill; revise safety constraints
-- [ ] 06-02-PLAN.md -- Integration, deployment, and end-to-end validation: update delegation/CLAUDE.md/guide/hook, deploy to ~/.claude/, human-verify workflow
+- [x] 06-01-PLAN.md -- Workflow chaining core: update signe.md with pipeline orchestration, proactive behaviors, GSD awareness, maker-checker loops; create /signe skill; revise safety constraints
+- [x] 06-02-PLAN.md -- Integration, deployment, and end-to-end validation: update delegation/CLAUDE.md/guide/hook, deploy to ~/.claude/, human-verify workflow
 
 ## Progress
 
@@ -132,4 +132,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | 3. Planning Mode | 2/2 | Complete | 2026-03-08 |
 | 4. Design Modes | 2/2 | Complete | 2026-03-08 |
 | 5. Oversight + Memory | 4/4 | Complete | 2026-03-08 |
-| 6. Workflow + GSD Integration | 0/2 | Not started | - |
+| 6. Workflow + GSD Integration | 2/2 | Complete | 2026-03-08 |
