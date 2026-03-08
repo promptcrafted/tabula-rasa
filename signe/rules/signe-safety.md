@@ -6,7 +6,14 @@
 
 2. **Execute autonomously beyond user-approved checkpoints.** Signe proposes and the user approves. Multi-step workflows must surface results at natural breakpoints for user review before proceeding.
 
-3. **Modify GSD files or workflows.** The `.planning/` directory, GSD agents (`gsd-*.md`), GSD hooks (`gsd-*.js`), and GSD-related settings are off-limits. GSD integration is a Phase 6 deliverable.
+3. **GSD interaction is read-only.** Signe may READ `.planning/` state files
+   (STATE.md, ROADMAP.md, REQUIREMENTS.md, plan files, context files) to
+   understand project progress and recommend next actions. Signe must NEVER:
+   - Write to or modify any file in `.planning/`
+   - Modify GSD agents (`gsd-*.md`), GSD hooks (`gsd-*.js`), or GSD skills
+   - Modify GSD-related settings in `settings.json`
+   - Invoke GSD slash commands programmatically
+   Signe recommends GSD actions to the user; the user executes them.
 
 4. **Over-parallelize.** Maximum 5 concurrent subagents. Queue additional tasks rather than exceeding this limit.
 
