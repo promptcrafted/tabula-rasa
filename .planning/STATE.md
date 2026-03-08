@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: in-progress
-stopped_at: Completed 05-02
-last_updated: "2026-03-08T17:51:13Z"
-last_activity: 2026-03-08 -- Plan 05-02 executed (subagent methodology + agent-recipes playbook)
+stopped_at: Completed 05-01
+last_updated: "2026-03-08T17:53:00Z"
+last_activity: 2026-03-08 -- Plan 05-01 executed (oversight agent + skill entry point)
 progress:
   total_phases: 6
   completed_phases: 4
   total_plans: 12
-  completed_plans: 10
-  percent: 83
+  completed_plans: 11
+  percent: 92
 ---
 
 # Project State
@@ -21,23 +21,23 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-07)
 
 **Core value:** Signe must chain research -> plan -> design -> oversee in a single coherent workflow, delegating to specialized subagents she designs, tests, and validates herself.
-**Current focus:** Phase 5: Oversight & Memory -- subagent methodology complete, oversight agent pending
+**Current focus:** Phase 5: Oversight & Memory -- oversight agent and methodology complete, deployment remaining
 
 ## Current Position
 
 Phase: 5 of 6 (Oversight & Memory)
-Plan: 2 of 3 in current phase (05-02 complete)
-Status: Plan 05-02 complete -- subagent methodology added to signe.md, agent-recipes playbook initialized
-Last activity: 2026-03-08 -- Plan 05-02 executed (subagent methodology + agent-recipes playbook)
+Plan: 2 of 3 in current phase (05-01 and 05-02 complete)
+Status: Plans 05-01 and 05-02 complete -- oversight agent, skill, methodology, and playbook done; deployment remaining in 05-03
+Last activity: 2026-03-08 -- Plan 05-01 executed (oversight agent + skill entry point)
 
-Progress: [████████░░] 83%
+Progress: [█████████░] 92%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 10
+- Total plans completed: 11
 - Average duration: ~3.2min
-- Total execution time: ~32 min
+- Total execution time: ~35 min
 
 **By Phase:**
 
@@ -47,11 +47,11 @@ Progress: [████████░░] 83%
 | 2. Research Mode | 2/2 | ~8min | ~4min |
 | 3. Planning Mode | 2/2 | ~5min | ~2.5min |
 | 4. Design Modes | 2/2 | ~7min | ~3.5min |
-| 5. Oversight & Memory | 1/3 | ~1min | ~1min |
+| 5. Oversight & Memory | 2/3 | ~4min | ~2min |
 
 **Recent Trend:**
-- Last 3 plans: 04-01 (3min), 04-02 (4min), 05-02 (1min)
-- Trend: Lightweight documentation-only plans execute in under 2min
+- Last 3 plans: 04-02 (4min), 05-02 (1min), 05-01 (3min)
+- Trend: Agent definition plans average 3min, documentation-only plans under 2min
 
 *Updated after each plan completion*
 
@@ -92,6 +92,10 @@ Recent decisions affecting current work:
 - [04-01]: Methodology-per-preset with "follow ONLY these steps" delimiter to prevent cross-contamination
 - [04-02]: Direct cp deployment pattern reused from Phases 2 and 3 -- consistent across all mode deployments
 - [04-02]: Phase note updated from Phase 3 to Phase 4 in delegation rules to reflect signe-designer availability
+- [05-01]: maxTurns 40 for overseer -- same as designer, more tool-intensive than planner but less exploratory than researcher
+- [05-01]: No MCP servers for overseer -- works entirely with local filesystem tools (Read, Write, Bash, Grep, Glob)
+- [05-01]: Sequential lens execution (Security -> Correctness -> Performance -> Coverage -> Style) to prevent cross-contamination
+- [05-01]: Quality gate: PASS (no critical/high + >80% criteria), WARN (no critical + high or 50-80%), FAIL (any critical or <50%)
 - [05-02]: Methodology section placed after Memory, before Tool Access in signe.md
 - [05-02]: agent-recipes.md uses 90-day pruning guidance for stale entries
 - [05-02]: Maximum 2 iteration rounds before escalating to user for guidance
@@ -108,7 +112,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-08T17:51:13Z
-Stopped at: Completed 05-02
-Resume file: .planning/phases/05-oversight-memory/05-02-SUMMARY.md
-Next: Phase 5 remaining plans
+Last session: 2026-03-08T17:53:00Z
+Stopped at: Completed 05-01
+Resume file: .planning/phases/05-oversight-memory/05-01-SUMMARY.md
+Next: Phase 5 Plan 03 -- integration, deployment, and end-to-end validation

@@ -74,12 +74,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Oversight Mode
 
-- [ ] **OVRS-01**: User can invoke oversight via `/signe-oversee` skill and Signe spawns `signe-overseer` agent
-- [ ] **OVRS-02**: Overseer performs multi-lens code review (security, performance, correctness, test coverage, style as separate passes)
-- [ ] **OVRS-03**: Overseer compares implementation against plan acceptance criteria and flags gaps
-- [ ] **OVRS-04**: Overseer tracks progress (completed vs remaining milestones, blockers, remaining work estimate)
-- [ ] **OVRS-05**: Overseer enforces quality gates per phase -- pass/fail with criteria, blocks progress on failure
-- [ ] **OVRS-06**: Overseer produces actionable feedback (specific file, line, issue, severity, recommended fix)
+- [x] **OVRS-01**: User can invoke oversight via `/signe-oversee` skill and Signe spawns `signe-overseer` agent
+- [x] **OVRS-02**: Overseer performs multi-lens code review (security, performance, correctness, test coverage, style as separate passes)
+- [x] **OVRS-03**: Overseer compares implementation against plan acceptance criteria and flags gaps
+- [x] **OVRS-04**: Overseer tracks progress (completed vs remaining milestones, blockers, remaining work estimate)
+- [x] **OVRS-05**: Overseer enforces quality gates per phase -- pass/fail with criteria, blocks progress on failure
+- [x] **OVRS-06**: Overseer produces actionable feedback (specific file, line, issue, severity, recommended fix)
 
 ### Subagent Methodology
 
@@ -179,12 +179,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PROD-02 | Phase 4: Design Modes | Complete |
 | PROD-03 | Phase 4: Design Modes | Complete |
 | PROD-04 | Phase 4: Design Modes | Complete |
-| OVRS-01 | Phase 5: Oversight + Memory | Pending |
-| OVRS-02 | Phase 5: Oversight + Memory | Pending |
-| OVRS-03 | Phase 5: Oversight + Memory | Pending |
-| OVRS-04 | Phase 5: Oversight + Memory | Pending |
-| OVRS-05 | Phase 5: Oversight + Memory | Pending |
-| OVRS-06 | Phase 5: Oversight + Memory | Pending |
+| OVRS-01 | Phase 5: Oversight + Memory | Complete |
+| OVRS-02 | Phase 5: Oversight + Memory | Complete |
+| OVRS-03 | Phase 5: Oversight + Memory | Complete |
+| OVRS-04 | Phase 5: Oversight + Memory | Complete |
+| OVRS-05 | Phase 5: Oversight + Memory | Complete |
+| OVRS-06 | Phase 5: Oversight + Memory | Complete |
 | METH-01 | Phase 5: Oversight + Memory | Complete |
 | METH-02 | Phase 5: Oversight + Memory | Complete |
 | METH-03 | Phase 5: Oversight + Memory | Complete |

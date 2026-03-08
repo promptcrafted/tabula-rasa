@@ -99,7 +99,7 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 05-01-PLAN.md -- Oversight agent and skill: signe-overseer.md with 5-lens review methodology, signe-oversee SKILL.md with scope routing
+- [x] 05-01-PLAN.md -- Oversight agent and skill: signe-overseer.md with 5-lens review methodology, signe-oversee SKILL.md with scope routing
 - [x] 05-02-PLAN.md -- Subagent methodology and memory: methodology guidelines in signe.md, agent-recipes.md topic file
 - [ ] 05-03-PLAN.md -- Integration, deployment, and end-to-end validation: update infrastructure files, deploy to ~/.claude/, human-verify
 
@@ -131,5 +131,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | 2. Research Mode | 2/2 | Complete   | 2026-03-08 |
 | 3. Planning Mode | 2/2 | Complete | 2026-03-08 |
 | 4. Design Modes | 2/2 | Complete | 2026-03-08 |
-| 5. Oversight + Memory | 1/3 | In progress | - |
+| 5. Oversight + Memory | 2/3 | In progress | - |
 | 6. Workflow + GSD Integration | 0/3 | Not started | - |
