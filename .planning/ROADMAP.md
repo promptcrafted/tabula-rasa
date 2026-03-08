@@ -52,10 +52,10 @@ Plans:
   3. On next session start, agent loads its persona automatically and uses the chosen name/personality throughout all interactions
   4. User runs `/setup` inside a project folder and gets a project-scoped persona that overrides the global one for that project
   5. User runs `/reset-persona` and persona is wiped, returning agent to pre-setup state ready for fresh onboarding
-**Plans:** 2 plans
+**Plans:** 1/2 plans executed
 
 Plans:
-- [ ] 08-01-PLAN.md -- Core setup skill and agent: conversational onboarding, persona generation, MEMORY.md persistence
+- [x] 08-01-PLAN.md -- Core setup skill and agent: conversational onboarding, persona generation, MEMORY.md persistence
 - [ ] 08-02-PLAN.md -- Project-scoped persona override, /reset-persona skill, end-to-end verification
 
 ### Phase 9: Packaging & Documentation
@@ -85,5 +85,5 @@ Plans:
 | 5. Oversight + Memory | v1.0 | 4/4 | Complete | 2026-03-08 |
 | 6. Workflow + GSD Integration | v1.0 | 2/2 | Complete | 2026-03-08 |
 | 7. Privacy Scrub & Dynamic Identity | v1.1 | 2/2 | Complete | 2026-03-08 |
-| 8. Setup Workflow | v1.1 | 0/2 | Not started | - |
+| 8. Setup Workflow | v1.1 | 1/2 | In progress | - |
 | 9. Packaging & Documentation | v1.1 | 0/2 | Not started | - |

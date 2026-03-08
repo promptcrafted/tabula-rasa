@@ -9,9 +9,9 @@ Requirements for public release. Each maps to roadmap phases.
 
 ### Setup & Persona
 
-- [ ] **SETUP-01**: User runs `/setup` and agent conducts conversational onboarding to learn about user and their work
-- [ ] **SETUP-02**: Agent generates its own name, gender, and personality based on setup conversation
-- [ ] **SETUP-03**: Agent persona persists in user-scope MEMORY.md and loads automatically every session
+- [x] **SETUP-01**: User runs `/setup` and agent conducts conversational onboarding to learn about user and their work
+- [x] **SETUP-02**: Agent generates its own name, gender, and personality based on setup conversation
+- [x] **SETUP-03**: Agent persona persists in user-scope MEMORY.md and loads automatically every session
 - [ ] **SETUP-04**: User can run `/setup` in a project folder to create a project-scoped persona that overrides global
 - [ ] **SETUP-05**: User can run `/reset-persona` to wipe persona and re-run setup from scratch
 
@@ -57,9 +57,9 @@ Explicitly excluded. Documented to prevent scope creep.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| SETUP-01 | Phase 8 | Pending |
-| SETUP-02 | Phase 8 | Pending |
-| SETUP-03 | Phase 8 | Pending |
+| SETUP-01 | Phase 8 | Complete |
+| SETUP-02 | Phase 8 | Complete |
+| SETUP-03 | Phase 8 | Complete |
 | SETUP-04 | Phase 8 | Pending |
 | SETUP-05 | Phase 8 | Pending |
 | PKG-01 | Phase 9 | Pending |

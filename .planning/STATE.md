@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: Public Release
-status: completed
-stopped_at: Phase 8 context gathered
-last_updated: "2026-03-08T21:26:35.161Z"
-last_activity: 2026-03-08 -- Completed 07-02 dynamic identity
+status: in-progress
+stopped_at: Completed 08-01-PLAN.md
+last_updated: "2026-03-08T21:41:00Z"
+last_activity: 2026-03-08 -- Completed 08-01 setup skill and agent
 progress:
   total_phases: 3
   completed_phases: 1
-  total_plans: 2
-  completed_plans: 2
-  percent: 100
+  total_plans: 4
+  completed_plans: 3
+  percent: 75
 ---
 
 # Project State
@@ -21,24 +21,24 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-08)
 
 **Core value:** Chain research -> plan -> design -> oversee in a single coherent workflow, with dynamic persona that self-personalizes to each user.
-**Current focus:** Phase 7 -- Privacy Scrub & Dynamic Identity
+**Current focus:** Phase 8 -- Setup Workflow
 
 ## Current Position
 
-Phase: 7 of 9 (Privacy Scrub & Dynamic Identity)
-Plan: 2 of 2 in current phase
-Status: Phase Complete
-Last activity: 2026-03-08 -- Completed 07-02 dynamic identity
+Phase: 8 of 9 (Setup Workflow)
+Plan: 1 of 2 in current phase
+Status: In Progress
+Last activity: 2026-03-08 -- Completed 08-01 setup skill and agent
 
-Progress: [██████████] 100% (2/2 plans)
+Progress: [████████░░] 75% (3/4 v1.1 plans)
 
 ## Performance Metrics
 
 **Velocity:**
 - Total plans completed: 15 (v1.0)
-- v1.1 plans completed: 2
-- Average duration: 2.5min
-- Total execution time: 5min
+- v1.1 plans completed: 3
+- Average duration: 2.3min
+- Total execution time: 7min
 
 ## Accumulated Context
 
@@ -52,6 +52,8 @@ v1.1 decisions:
 - Dynamic persona loads from MEMORY.md, falls back to role-only identity
 - Subagents inherit persona from task prompt context, not hardcoded
 - /setup hint in main orchestrator only, not subagents
+- Persona section at top of MEMORY.md for fast auto-loading within 200-line window
+- Two-strike name veto: first reject new name, second reject user chooses
 
 ### Pending Todos
 
@@ -63,6 +65,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-08T21:26:35.159Z
-Stopped at: Phase 8 context gathered
-Next: Phase 8 (setup command) or Phase 9 (docs)
+Last session: 2026-03-08T21:41:00Z
+Stopped at: Completed 08-01-PLAN.md
+Next: 08-02-PLAN.md (project-scoped persona, /reset-persona)
