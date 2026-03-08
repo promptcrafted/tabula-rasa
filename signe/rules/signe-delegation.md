@@ -24,10 +24,10 @@ Do NOT delegate when:
 | `/signe-research` | `signe-researcher` | Multi-source investigation | Available |
 | `/signe-plan` | `signe-planner` | Goal decomposition | Available |
 | `/signe-design` | `signe-designer` | Architecture, UI/UX, agent, product design | Available |
-| `/signe-oversee` | `signe-overseer` | Code review, quality gates | (Phase 5) |
+| `/signe-oversee` | `signe-overseer` | Code review, quality gates | Available |
 | `/signe` | `signe` (self) | Multi-mode workflow chaining | (Phase 6) |
 
-**Phase 4 note:** `signe-test-agent`, `signe-researcher`, `signe-planner`, and `signe-designer` are available. All other mode agents (overseer) are future phase deliverables. Do not attempt to spawn agents that do not exist.
+**Phase 5 note:** `signe-test-agent`, `signe-researcher`, `signe-planner`, `signe-designer`, and `signe-overseer` are available. All other mode agents are future phase deliverables. Do not attempt to spawn agents that do not exist.
 
 ## Delegation Decision Tree
 
