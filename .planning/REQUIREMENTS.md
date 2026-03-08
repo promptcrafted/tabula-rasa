@@ -32,13 +32,13 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Planning Mode
 
-- [ ] **PLAN-01**: User can invoke planning via `/signe-plan` skill and Signe spawns `signe-planner` agent
-- [ ] **PLAN-02**: Planner decomposes high-level goals into ordered phases with dependencies, deliverables, and rationale
-- [ ] **PLAN-03**: Planner maps explicit dependencies between tasks ("Phase B requires Phase A output")
-- [ ] **PLAN-04**: Planner extracts requirements from research output (FEATURES.md, STACK.md, PITFALLS.md) when available
-- [ ] **PLAN-05**: Each milestone has specific, verifiable acceptance criteria
-- [ ] **PLAN-06**: Planner provides explicit rationale for phase ordering based on dependencies, risk, and value
-- [ ] **PLAN-07**: Every plan explicitly states what is in scope and out of scope with reasoning
+- [x] **PLAN-01**: User can invoke planning via `/signe-plan` skill and Signe spawns `signe-planner` agent
+- [x] **PLAN-02**: Planner decomposes high-level goals into ordered phases with dependencies, deliverables, and rationale
+- [x] **PLAN-03**: Planner maps explicit dependencies between tasks ("Phase B requires Phase A output")
+- [x] **PLAN-04**: Planner extracts requirements from research output (FEATURES.md, STACK.md, PITFALLS.md) when available
+- [x] **PLAN-05**: Each milestone has specific, verifiable acceptance criteria
+- [x] **PLAN-06**: Planner provides explicit rationale for phase ordering based on dependencies, risk, and value
+- [x] **PLAN-07**: Every plan explicitly states what is in scope and out of scope with reasoning
 
 ### Design Mode -- System Architecture
 
@@ -152,13 +152,13 @@ Which phases cover which requirements. Updated during roadmap creation.
 | RSRCH-05 | Phase 2: Research Mode | Complete |
 | RSRCH-06 | Phase 2: Research Mode | Complete |
 | RSRCH-07 | Phase 2: Research Mode | Complete |
-| PLAN-01 | Phase 3: Planning Mode | Pending |
-| PLAN-02 | Phase 3: Planning Mode | Pending |
-| PLAN-03 | Phase 3: Planning Mode | Pending |
-| PLAN-04 | Phase 3: Planning Mode | Pending |
-| PLAN-05 | Phase 3: Planning Mode | Pending |
-| PLAN-06 | Phase 3: Planning Mode | Pending |
-| PLAN-07 | Phase 3: Planning Mode | Pending |
+| PLAN-01 | Phase 3: Planning Mode | Complete |
+| PLAN-02 | Phase 3: Planning Mode | Complete |
+| PLAN-03 | Phase 3: Planning Mode | Complete |
+| PLAN-04 | Phase 3: Planning Mode | Complete |
+| PLAN-05 | Phase 3: Planning Mode | Complete |
+| PLAN-06 | Phase 3: Planning Mode | Complete |
+| PLAN-07 | Phase 3: Planning Mode | Complete |
 | ARCH-01 | Phase 4: Design Modes | Pending |
 | ARCH-02 | Phase 4: Design Modes | Pending |
 | ARCH-03 | Phase 4: Design Modes | Pending |
